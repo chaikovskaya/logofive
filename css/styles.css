@@ -1,0 +1,131 @@
+/* video_course */
+.video_course {
+    margin-top: 100px;
+    margin-bottom: 110px;
+}
+.video_course_list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px -15px 20px;
+}
+.video_course_list_item {
+    box-sizing: border-box;
+    width: 33.3%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 28px;
+}
+.video_course_list_name {
+    display: block;
+    padding-right: 38px;
+    font-weight: 600;
+    color: #000000;
+    font: 17px/21px 'Montserrat_SemiBold', Arial;
+}
+.video_course_link:hover .video_course_list_name {
+    color: #7730DF;
+}
+.video_course_more {
+    text-align: center;
+}
+.video_course_more_link {
+    margin-left: auto;
+    margin-right: auto;
+}
+.video_course_link {
+    display: block;
+    cursor: pointer;
+}
+.video_course_img {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+.video_course_img:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.video_course_img:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+    background: url(images/play_video.svg) no-repeat 0 0;
+    background-size: 100% auto;
+}
+.video_course_pic {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+@media screen and (max-device-width: 1320px)
+{
+    .video_course {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .video_course_list {
+        margin-top: 25px;
+        margin-left: -7px;
+        margin-right: -7px;
+    }
+    .video_course_list_item {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    .video_course_img {
+        border-radius: 3px;
+        margin-bottom: 15px;
+    }
+    .video_course_img:after {
+        width: 42px;
+        height: 42px;
+    }
+    .video_course_pic {
+        height: 118px;
+    }
+    .video_course_list_name {
+        padding-right: 20px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+@media screen and (max-device-width: 719px)
+{
+    .video_course {
+        margin-top: 30px;
+    }
+    .video_course_list {
+        margin: 25px 0 30px;
+    }
+    .video_course_list_item {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .video_course_img:after {
+        width: 55px;
+        height: 55px;
+    }
+    .video_course_pic {
+        height: 155px;
+        border-radius: 5px;
+    }
+}
+
+
+
