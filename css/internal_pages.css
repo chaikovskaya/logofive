@@ -1216,7 +1216,7 @@
     .education_fulltime ul .select_button:hover         { background: #E582EA; color: #FFFFFF; cursor: default; }
     .education_fulltime ul a:hover                      { background-color: transparent; color: #E582EA; }
 
-    .study_cases_on_education                                   { padding: 60px 0 100px 0; }
+    .study_cases_on_education                                   { padding: 60px 0 30px 0; }
     .study_cases_on_education .wrapper .left_column             { width: 417px; }
     .study_cases_on_education .wrapper .right_column            { width: 583px; }
     .study_cases_on_education .wrapper .left_column h2          { color: #000000; }
