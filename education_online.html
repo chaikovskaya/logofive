@@ -10,7 +10,7 @@
         <meta charset="UTF-8">
         <meta name="robots" content="noindex">
 
-        <title>EDUCATION FULLTIME Page</title>
+        <title>EDUCATION ONLINE Page</title>
 
         <!-- CSS FOR SWIPER -->
         <link rel="stylesheet" type="text/css" href="js/swiper/swiper-bundle.min.css"/>
@@ -37,29 +37,17 @@
             </div>
         </div>
 
-        <!-- EDUCATION REQUSET -->
-        <div class="_pop_container _pop_container_scroll HidePopUp"  id="education_request_form">
-
+        <!-- EDUCATION ONLINE REQUSET -->
+        <div class="_pop_container _pop_container_scroll HidePopUp"  id="education_online_request_form">
             <div class="_pop_window">
-
                 <div class="_pop_close"></div>
-
                 <div class="_pop_scroll">
-
-                    <h1>Записать ребенка на очные занятия</h1>
+                    <h1>Записать ребенка на онлайн-занятия</h1>
                     <p class="text">Заполните форму и дождитесь нашего звонка - мы поможем вам во всем разобраться</p>
 
                     <div class="form_inputs">
 
-                        <select class="select" name="language">
-                            <option disabled>Выберите адрес центра</option>
-                            <option value="Adress_1">Можайское шоссе. дом 80-Б, бизнес-центр «Алькор»</option>
-                            <option value="Adress_2">Москва, Балаклавский пр-т., дом 23</option>
-                            <option value="Adress_3">Санкт-Петербург, Невский пр-т., дом 12</option>
-                        </select>
-
-                        <input placeholder="ФИО родителя полностью"/>
-
+                        <input placeholder="Возраст ребенка"/>
                         <select class="select" name="language">
                             <option disabled>Выберите курс</option>
                             <option value="Training_course_1">«Дошкольник»</option>
@@ -68,34 +56,17 @@
                             <option value="Training_course_4">«Учусь считать на пять»</option>
                             <option value="Training_course_5">«Английский в радость»</option>
                         </select>
-
+                        <input placeholder="ФИО родителя полностью"/>
                         <input placeholder="* Email"/>
-                        <input placeholder="Возраст ребенка"/>
                         <input placeholder="* Телефон"/>
 
                     </div>
-
-                    <a onclick="PopUpClose('education_request_form'); PopUpShow('simple_request_form_send');" class="lilac_button">Отправить заявку</a>
+                    <a onclick="PopUpClose('education_online_request_form'); PopUpShow('simple_request_form_send');" class="lilac_button">Отправить заявку</a>
                     <span class="consent_processing">Нажимая кнопку «Отправить заявку», Вы даете согласие на обработку персональных данных</span>
-
-                </div>
-
+                 </div>
             </div>
         </div>
 
-        <!-- SIMPLY REQUSET -->
-        <div class="_pop_container HidePopUp"  id="simple_request_form">
-            <div class="_pop_window">
-                <div class="_pop_close"></div>
-                <h1>Записать ребенка на обучение</h1>
-                <p class="text">Заполните форму и дождитесь нашего звонка - мы поможем вам во всем разобраться</p>
-                <input placeholder="* Имя"/>
-                <input placeholder="* Телефон"/>
-                <input placeholder="* Email"/>
-                <a onclick="PopUpClose('simple_request_form'); PopUpShow('simple_request_form_send');" class="lilac_button">Отправить заявку</a>
-                <span>Нажимая кнопку «Отправить заявку», Вы даете согласие на обработку персональных данных</span>
-            </div>
-        </div>
         <!-- SEND -->
         <div class="_pop_container HidePopUp"  id="simple_request_form_send">
             <div class="_pop_window">
@@ -199,8 +170,8 @@
 
                 <h1>Учебный центр «Радость моя»</h1>
                 <ul>
-                    <li><a href="#" class="violet_button select_button">Очно</a></li>
-                    <li><a href="#" class="violet_button">Онлайн</a></li>
+                    <li><a href="#" class="violet_button">Очно</a></li>
+                    <li><a href="#" class="violet_button select_button">Онлайн</a></li>
                 </ul>
 
             </div>
@@ -208,21 +179,32 @@
 
 
         <!--    STUDY CASES  -->
-        <div class="container study_cases study_cases_on_education">
+        <div class="container study_cases study_cases_on_education study_cases_on_education_online">
 
             <div class="wrapper">
 
             <div class="left_column">
 
+                    <h2>Онлайн-занятия со школьниками от 7 до 15 лет </h2>
 
-                    <h2>Очные занятия в центре проводятся в активной игровой форме независимо от возраста учеников в подгруппах до 5 человек и индивидуально </h2>
+                    <p class="text">Мы перевели все методики Пятибратовой в онлайн-формат и сделали их максимально эффеквтивными. Особенностью таких занятий является:</p>
 
-                    <img src="images/education_fulltime_1.jpg"/>
+                    <img src="images/education_online_1.jpg"/>
 
-                    <p class="text">В основе обучения лежат методики Наталии Пятибратовой, а также нейропсихологический и логопедческий подходы. На некоторых занятиях должна присутствовать мама или человек, который будет помогать ребенку с домашними заданиями.</p>
-                    <p class="text">Домашние задания в нашем центре - обазательны для успешного преодоления трудностей в устной речи, письме, чтении и математике.</p>
+                    <p class="text"><b>Активная форма обучения</b>
+                        Не менее половины времени занятия дети двигаются, стоят, выполняют упражнения в движении
+                    </p>
+                    <p class="text"><b>Игровая форма обучения</b>
+                        Вне зависимости от возраста и класса ученика
+                    </p>
+                    <p class="text"><b>Мотивационные приемы</b>
+                        Использование игрушек, бытовых предметов, природного материала и другое
+                    </p>
+                    <p class="text"><b>Система поощрений</b>
+                        За десять хорошо выполненных домашних заданий ребенок получает подарок, который педагог высылает по настоящей почте
+                    </p>
 
-                    <a class="lilac_button" onclick="PopUpShow('education_request_form');">Выбрать курс</a>
+                    <a class="lilac_button" onclick="PopUpShow('education_online_request_form');">Выбрать курс</a>
                 </div>
 
                 <div class="right_column">
@@ -238,60 +220,90 @@
             <div class="wrapper">
                 <div class="educational_audience_container">
                     <div class="educational_audience_box">
-                        <div class="educational_audience_block">
-                            <h2 class="educational_audience_name">Для малышей 3 - 6 лет</h2>
+                        <div class="educational_audience_block educational_audience_block_big">
+                            <h2 class="educational_audience_name">Преимущества наших онлайн-занятий</h2>
                             <ul class="educational_audience_list">
                                 <li class="educational_audience_list_item">
-                                    <div class="educational_audience_list_name">Коррекция устной речи</div>
-                                    <div class="educational_audience_info">постановка звуков, логопедический массаж, исправление аграмматизмов (неверного использования в речи приставок, окончаний, предлогов и т.д.), обучение рассказу и пересказу</div>
+                                    <div class="educational_audience_list_name">Активная форма обучения</div>
+                                    <div class="educational_audience_info">Не менее половины времени занятия дети двигаются, стоят, выполняют упражнения около стены с наглядным материалом</div>
                                 </li>
                                 <li class="educational_audience_list_item">
-                                    <div class="educational_audience_list_name">Вызывание речи</div>
-                                    <div class="educational_audience_info">у неговорящих малышей. Помогаем ребенку разговориться. Алалия - это не приговор. Смотрите видео <a href="#">"История одного сенсомоторного алалика"</a> в видео ниже</div>
+                                    <div class="educational_audience_list_name">Игровая форма обучения</div>
+                                    <div class="educational_audience_info">Вне зависимости от возраста и класса ученика</div>
                                 </li>
                                 <li class="educational_audience_list_item">
-                                    <div class="educational_audience_list_name">Подготовка к школе</div>
-                                    <div class="educational_audience_info">обучение чтению, письму печатными буквами, основам математики. В курсе "Дошкольник" дети знакомятся с некоторыми художественными и музыкальными классическими произведениями, расширяют кругозор, развивают речь. В программу включены темы из сферы биологии, географии, этнологии</div>
+                                    <div class="educational_audience_list_name">Мотивационные приемы</div>
+                                    <div class="educational_audience_info">Использование игрушек, бытовых предметов, природного материала и всего, что под рукой в доме ученика</div>
+                                </li>
+                                <li class="educational_audience_list_item">
+                                    <div class="educational_audience_list_name">Система поощрений</div>
+                                    <div class="educational_audience_info">За десять хорошо выполненных домашних заданий ребенок получает подарок, который педагог высылает по настоящей почте</div>
+                                </li>
+                                <li class="educational_audience_list_item">
+                                    <div class="educational_audience_list_name">Новизна</div>
+                                    <div class="educational_audience_info">Игры, презентации и подача материала все время меняются, что не дает ученику заскучать</div>
+                                </li>
+                                <li class="educational_audience_list_item">
+                                    <div class="educational_audience_list_name">Общение вне занятий</div>
+                                    <div class="educational_audience_info">Между детьми группы устраиваются челленджи, конкурсы через мессенджеры; дети дают задания друг другу и проверяют их</div>
+                                </li>
+                                <li class="educational_audience_list_item">
+                                    <div class="educational_audience_list_name">Участие родителей</div>
+                                    <div class="educational_audience_info">Присутствие мамы на занятии помогает организовать ребенка и быть в курсе всего коррекционного процесса.</div>
                                 </li>
                             </ul>
+                        </div>
+                    </div>
+                    <div class="educational_audience_box">
+                        <div class="educational_audience_block educational_audience_block_main">
+                            <div class="educational_audience_important_inner">
+                                <img class="educational_audience_important_icon" src="images/educational_audience_icon_2.svg" alt="" />
+                                <div class="educational_audience_important">Каждый курс рассчитан на 1-2 года обучения. За этот период ставится задача не только преодолеть школьную трудность, но и опередить школьную программу, вернуть мотивацию к обучению, наладить весь образовательный процесс в семье. Ребенок становится спокойнее, увереннее в себе, даже ждет занятий!</div>
+                            </div>
                         </div>
                         <div class="educational_audience_block educational_audience_block_important">
                             <div class="educational_audience_important_inner">
                                 <img class="educational_audience_important_icon" src="images/educational_audience_icon_1.svg" alt="" />
-                                <div class="educational_audience_important">Домашние задания в нашем центре - обязательны для успешного преодоления трудностей в устной речи, письме, чтении и математике. Логопед помогает родителям правильно выполнять упражнения и игры через просмотр видео, которые высылают ему через мессенджер.</div>
+                                <div class="educational_audience_important">Домашние задания обязательны. На каникулах и майских праздниках обучение не прекращается. Все дружно отдыхают только на январских праздниках. Все материалы, необходимые для обучения, высылаются педагогом в электронном виде, за исключением 1-2 пособия, которые необходимо приобрести для курса (например, "Магнитная математика", "Деревянный алфавит с элементами букв")</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="educational_audience_box">
-                        <div class="educational_audience_block educational_audience_block_big">
-                        <h2 class="educational_audience_name">Для школьников 2 - 8-х классов</h2>
-                        <ul class="educational_audience_list">
-                            <li class="educational_audience_list_item">
-                                <div class="educational_audience_list_name">Коррекция безграмотного письма (дисграфии, дизорфографии)</div>
-                                <div class="educational_audience_info">Мы специализируемся на помощи детям со множественными ошибками в диктантах, синдромом дефицита внимания, с истощаемостью и отсутствием мотивации к учебе</div>
-                            </li>
-                            <li class="educational_audience_list_item">
-                                <div class="educational_audience_list_name">Коррекция нарушений навыков счета (дискалькулия)</div>
-                                <div class="educational_audience_info">Методика помогает ребятам, которые не могут из года в год усвоить состав числа, разрядное строение, научиться считать в уме, складывать, вычитать, делить, выучить таблицу умножения и разобраться с задачами. Это не просто пробелы в знаниях, а серьезное нарушение развития. Рекомендую посмотреть "Первый урок Учебного кейса "Методика коррекции дискалькулии" в разделе сайта "Методики и Учебные кейсы"</div>
-                            </li>
-                            <li class="educational_audience_list_item">
-                                <div class="educational_audience_list_name">Коррекция почерка</div>
-                                <div class="educational_audience_info">Сделаем красивым и читаемым почерк у ребят 2-4 классов, а у школьников 5-7 классов он станет читаемым при высокой скорости. Нередко плохой почерк - спутник дисграфии и усугубляет ее. В этом случае рекомендую направить ребенка сразу на 2 курса: "Пишу-и радуюсь" и "Русский язык без правил"</div>
-                            </li>
-                            <li class="educational_audience_list_item">
-                                <div class="educational_audience_list_name">Обучение английскому языку детей с дислексией и дисграфией</div>
-                                <div class="educational_audience_info">Результатом  занятий по методике Letterland в обработке Н.Пятибратовой будет безошибочное чтение, понимание грамматики, улучшится говорение и аудирование. Более того, авторская методика поможет через занятия английским языком улучшить  чтение и письмо на русском</div>
-                            </li>
-                            <li class="educational_audience_list_item">
-                                <div class="educational_audience_list_name">Коррекция  дислексии</div>
-                                <div class="educational_audience_info">Авторские приемы работы, увязанные в систему, помогут ребенку начать уверенно читать, а, главное - полюбить это делать. Много внимания уделяется пониманию читаемого. Рекомендую посмотреть "Первый урок Учебного кейса "Читаем с радостью. Коррекция дислексии"</div>
-                            </li>
-                        </ul>
-                    </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- BIG QUOTE 4 -->
+        <div class="container big_quote small_quote eduacation_quote">
+            <div class="wrapper">
+                <p class="text">Наши занятия настолько эффективны, что не уступают очной форме работы. Обязательным условием является присутствие родителя на занятии, хотя бы первое время. Это нужно для того, чтобы помогать ребенку вникнуть в суть методики. Перед началом занятий по любому выбранному вами курсу педагог центра проведет обязательную первичную диагностику, с выдачей письменного заключения по желанию родителя. </p>
+            </div>
+        </div>
+
+        <!-- CONSULTATION -->
+        <div class="container consultation">
+
+            <h1>Консультация проводится в 3 этапа:</h1>
+            <div class="wrapper">
+
+                <p class="text">
+                    <b>1</b>
+                    <span>анализируем заполненную Вами анкету и высылаем материалы для диагностики</span>
+                </p>
+                <img src="css/images/main_slider_right_arrow.svg"/>
+                <p class="text">
+                    <b>2</b>
+                    <span>проводим онлайн-диагностику, среднее время - 90 минут, из которых 60 - общение с ребенком, а 30 - с родителем</span>
+                </p>
+                <img src="css/images/main_slider_right_arrow.svg"/>
+                <p class="text">
+                    <b>3</b>
+                    <span>при участии Наталии Пятибратовой анализируем полученные данные и выдаем окончательное заключение</span>
+                </p>
+
+            </div>
+
+        </div>
+
 
         <!-- MENTORS -->
         <div class="container mentors mentors_on_education">
@@ -374,55 +386,18 @@
 
 
         <!-- VIDEO SLIDER -->
-        <div class="container video_slider_on_about video_slider_on_education">
-
-            <div class="wrapper">
-
-                <h1>Как проходят наши занятия</h1>
-
-                <div class="video_swipper_crop">
-
-                <div class="swiper video_swiper video_slider">
-
-                    <div class="swiper-wrapper ">
-
-                        <div class="swiper-slide video_slide">
-                            <a onclick="PopUpShow('show_video_popup', '4BZZkJfqc6I');" class="text_semibold">
-                                <span><img src="images/_video_1.jpg"/></span>Групповое занятие по русскому языку для детей с дисграфией и дизорфографией, 5-6 классы
-                            </a>
-                        </div>
-                        <div onclick="PopUpShow('show_video_popup', '4NDsIBqJKv8');" class="swiper-slide video_slide">
-                            <a class="text_semibold">
-                                <span><img src="images//_video_2.jpg"/></span>Занятия математикой для детей с трудностями счета (дискалькулией), 3 класс
-                            </a>
-                        </div>
-                        <div onclick="PopUpShow('show_video_popup', 'H7ldfcug2h8');" class="swiper-slide video_slide">
-                            <a class="text_semibold">
-                                <span><img src="images//_video_3.jpg"/></span>Занятие по коррекции дисграфии (множественные ошибки в диктантах), 2-6 классы
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-            </div>
-
-        </div>
+        
 
 
         <!--  -->
-        <div class="container cost_of_classes">
+        <div class="container cost_of_classes cost_of_classes_online">
 
             <div class="wrapper">
 
                 <h1>Стоимость занятий</h1>
                 <ul>
-                    <li><a href="#" class="violet_button select_button">Очно</a></li>
-                    <li><a href="#" class="violet_button">Онлайн</a></li>
+                    <li><a href="#" class="violet_button">Очно</a></li>
+                    <li><a href="#" class="violet_button select_button">Онлайн</a></li>
                 </ul>
 
                 <div class="price_of_classes_crop">
@@ -435,18 +410,8 @@
                     </dl>
                     <dl>
                         <dt>Первичная консультация детей дошкольного и школьного возраста</dt>
-                        <dd>2 000 ₽</dd>
+                        <dd>3 000 ₽</dd>
                         <dd>нет</dd>
-                    </dl>
-                    <dl>
-                        <dt>Логопедические занятия по коррекции речи с детьми 3-6 лет</dt>
-                        <dd>1 500 ₽</dd>
-                        <dd>нет</dd>
-                    </dl>
-                    <dl>
-                        <dt>«Дошкольник»<span>подготовка к школе</span></dt>
-                        <dd>1 500 ₽</dd>
-                        <dd>1 000 ₽</dd>
                     </dl>
                     <dl>
                         <dt>«Русский язык без правил»<span>исправление безграмотного письма (дисграфии и дизорфографии) у детей 2 - 8 классов</span></dt>
@@ -455,8 +420,8 @@
                     </dl>
                     <dl>
                         <dt>«Пишу – и радуюсь!»<span>коррекция почерка у детей 2 - 7 классов</span></dt>
-                        <dd>1 500 ₽</dd>
-                        <dd>1 000 ₽</dd>
+                        <dd>1 700 ₽</dd>
+                        <dd>1 200 ₽</dd>
                     </dl>
                     <dl>
                         <dt>«Читаю с радостью»<span>исправление нарушений чтения (дислексии) у детей 2 - 7 классов</span></dt>
@@ -478,42 +443,6 @@
             </div>
 
         </div>
-
-
-
-        <!-- ADRESS -->
-        <div class="container adress stretch_box adress_on_education">
-
-            <div class="wrapper">
-                <h1>Адреса центров</h1>
-                <div class="white_box">
-                    <div class="left_column">
-                        <h1>Одинцово</h1>
-                        <div class="map_box">
-                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acd0920ae1389a1d52326bb2701229725d1cac701d75d120fd3307c22072a4e91&amp;source=constructor" width="583" height="343" frameborder="0"></iframe>
-                        </div>
-                        <h2>Можайское шоссе. дом 80-Б,<br>бизнес-центр "Алькор"</h2>
-                            <p>
-                                <span class="_phone text">+7 916 739 46 47</span>
-                                <span class="_email text">nata_757575@mail.ru</span>
-                            </p>
-                        <div class="social">
-                            <a class="vk" href="#"></a>
-                            <a class="whatsapp" href="#"></a>
-                            <a class="telegram" href="#"></a>
-                        </div>
-                        <a class="lilac_button" href="#">Записаться</a>
-                    </div>
-                    <div class="right_column">
-                        <div class="map_box">
-                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acd0920ae1389a1d52326bb2701229725d1cac701d75d120fd3307c22072a4e91&amp;source=constructor" width="583" height="343" frameborder="0"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
 
 
 

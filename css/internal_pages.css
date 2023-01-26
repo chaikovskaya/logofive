@@ -1286,7 +1286,7 @@
 
         .education_fulltime                                 { margin: 50px 0 0 0; }
         .education_fulltime ul                              { margin: 25px 0 0 0; }
-        .study_cases_on_education                           { padding: 40px 0 50px 0; }
+        .study_cases_on_education                           { padding-top: 40px; }
 
         .education_fulltime ul .violet_button                       { width: 120px; }
         .study_cases_on_education .wrapper .left_column             { width: 244px; }
@@ -1343,7 +1343,7 @@
 
         .education_fulltime ul                              { margin: 25px 0 0 0; }
 
-        .study_cases_on_education                           { padding: 40px 0 50px 0; }
+        .study_cases_on_education                           { padding-top: 40px; }
         .study_cases_on_education .wrapper                  { padding: 30px 18px; display: flex; flex-direction: column; align-items: center; }
 
         .study_cases_on_education .wrapper .left_column             { width: 100%; }

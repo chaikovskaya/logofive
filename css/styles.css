@@ -76,6 +76,7 @@
     .video_course {
         margin-top: 50px;
         margin-bottom: 50px;
+        max-width: 900px;
     }
     .video_course_list {
         margin-top: 25px;
@@ -110,7 +111,8 @@
         margin-top: 30px;
     }
     .video_course_list {
-        margin: 25px 0 30px;
+        max-width: 400px;
+        margin: 25px auto 30px;
     }
     .video_course_list_item {
         width: 100%;
@@ -154,7 +156,15 @@
     height: auto;
 }
 .educational_audience_block_important {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: linear-gradient(80.3deg, #FCEAE5 24.21%, #EDE1F7 115.51%);
+}
+.educational_audience_block_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .educational_audience_block_big {
     background-color: #F1F3F6;
@@ -182,6 +192,9 @@
     color: #000000;
     font: 16px/20px 'Montserrat_Regular', Arial;
 }
+.educational_audience_info a {
+    color: #000000;
+}
 .educational_audience_list_name {
     margin-bottom: 10px;
     color: #7730DF;
@@ -192,12 +205,103 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font: 18px/25px 'Nunito_SemiBold', Arial;
+    color: #000000;
+    font: 600 18px/25px 'Nunito_SemiBold', Arial;
+}
+.educational_audience_important_inner {}
+.educational_audience_important a {
     color: #000000;
 }
 .educational_audience_important_icon {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background: red url(images/educational_audience_icon_1.svg) no-repeat 0 0;
+    display: block;
+    max-width: 120px;
+    max-height: 120px;
+    margin-bottom: 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-device-width: 1320px) and (min-device-width: 719px)
+{
+    .educational_audience .wrapper {
+        width: 660px;
+    }
+    .educational_audience_block_important {
+        display: block;
+    }
+    .educational_audience_block_main {
+        display: block;
+    }
+    .educational_audience_important_inner {
+        display: flex;
+        align-items: center;
+    }
+    .educational_audience_important_icon {
+        margin-bottom: 0;
+        margin-right: 45px;
+    }
+    .educational_audience_important {
+        max-width: none;
+        text-align: left;
+    }
+}
+@media screen and (max-device-width: 1320px)
+{
+    .educational_audience {
+        margin-bottom: 50px;
+    }
+    .educational_audience_container {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .educational_audience_box {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .educational_audience_box:last-child {
+        margin-bottom: 0;
+    }
+    .educational_audience_block {
+        border-radius: 20px;
+        padding: 60px;
+    }
+    .educational_audience_name {
+        margin-bottom: 30px;
+    }
+    .educational_audience_list_name {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .educational_audience_list_item {
+        margin-bottom: 30px;
+    }
+    .educational_audience_info {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .educational_audience_important {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .educational_audience_important_icon {
+        max-width: 90px;
+        max-height: 90px;
+    }
+}
+
+@media screen and (max-device-width: 719px)
+{
+    .educational_audience_block {
+        padding: 30px;
+    }
+    .educational_audience_block_big {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    .educational_audience_important_icon {
+        margin-bottom: 18px;
+    }
 }
