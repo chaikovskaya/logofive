@@ -1,0 +1,515 @@
+
+<!DOCTYPE html>
+<html xml:lang="ru" lang="ru">
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover, user-scalable=no">
+
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+
+    <title>Бесплатный видеокурс «Детство на 5»</title>
+
+    <!-- CSS FOR SWIPER -->
+    <link rel="stylesheet" type="text/css" href="js/swiper/swiper-bundle.min.css"/>
+
+    <!-- CSS STYLES -->
+    <link type="text/css" rel="stylesheet" href="css/layout.css" />
+    <link type="text/css" rel="stylesheet" href="css/main_page.css" />
+    <link type="text/css" rel="stylesheet" href="css/internal_pages.css" />
+
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+
+</head>
+<body>
+
+
+
+<!--  POPUPS -->
+<div class="_pop_container HidePopUp"  id="show_video_popup">
+    <div class="_pop_window">
+        <div class="_pop_close"></div>
+
+        <div class="video_container"></div>
+
+    </div>
+</div>
+
+<!-- EDUCATION REQUSET -->
+<div class="_pop_container _pop_container_scroll HidePopUp"  id="education_request_form">
+
+    <div class="_pop_window">
+
+        <div class="_pop_close"></div>
+
+        <div class="_pop_scroll">
+
+            <h1>Записать ребенка на очные занятия</h1>
+            <p class="text">Заполните форму и дождитесь нашего звонка - мы поможем вам во всем разобраться</p>
+
+            <div class="form_inputs">
+
+                <select class="select" name="language">
+                    <option disabled>Выберите адрес центра</option>
+                    <option value="Adress_1">Можайское шоссе. дом 80-Б, бизнес-центр «Алькор»</option>
+                    <option value="Adress_2">Москва, Балаклавский пр-т., дом 23</option>
+                    <option value="Adress_3">Санкт-Петербург, Невский пр-т., дом 12</option>
+                </select>
+
+                <input placeholder="ФИО родителя полностью"/>
+
+                <select class="select" name="language">
+                    <option disabled>Выберите курс</option>
+                    <option value="Training_course_1">«Дошкольник»</option>
+                    <option value="Training_course_2">«Русский язык без правил»</option>
+                    <option value="Training_course_3">«Пишу – и радуюсь!»</option>
+                    <option value="Training_course_4">«Учусь считать на пять»</option>
+                    <option value="Training_course_5">«Английский в радость»</option>
+                </select>
+
+                <input placeholder="* Email"/>
+                <input placeholder="Возраст ребенка"/>
+                <input placeholder="* Телефон"/>
+
+            </div>
+
+            <a onclick="PopUpClose('education_request_form'); PopUpShow('simple_request_form_send');" class="lilac_button">Отправить заявку</a>
+            <span class="consent_processing">Нажимая кнопку «Отправить заявку», Вы даете согласие на обработку персональных данных</span>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- SIMPLY REQUSET -->
+<div class="_pop_container HidePopUp"  id="simple_request_form">
+    <div class="_pop_window">
+        <div class="_pop_close"></div>
+        <h1>Записать ребенка на обучение</h1>
+        <p class="text">Заполните форму и дождитесь нашего звонка - мы поможем вам во всем разобраться</p>
+        <input placeholder="* Имя"/>
+        <input placeholder="* Телефон"/>
+        <input placeholder="* Email"/>
+        <a onclick="PopUpClose('simple_request_form'); PopUpShow('simple_request_form_send');" class="lilac_button">Отправить заявку</a>
+        <span>Нажимая кнопку «Отправить заявку», Вы даете согласие на обработку персональных данных</span>
+    </div>
+</div>
+<!-- SEND -->
+<div class="_pop_container HidePopUp"  id="simple_request_form_send">
+    <div class="_pop_window">
+        <div class="_pop_close"></div>
+        <h2>Спасибо!<br>Ваша заявка успешно отправлена!</h2>
+        <a onclick="PopUpClose('simple_request_form_send');" class="lilac_button">Закрыть</a>
+    </div>
+</div>
+
+<!-- HUMBURGER -->
+<div class="humburger_show"></div>
+
+<div class="humburger_container">
+    <div class="humburger_scroll_box">
+        <div class="humburger">
+            <div class="humburger_hide"></div>
+            <a href="" class="logo"><img src="css/images/logo.svg"/></a>
+            <ul>
+                <li><a href="" class="menu notdropdown">Учебный центр</a></li>
+                <li><a href="" class="menu notdropdown">Новости</a></li>
+                <li><a class="menu dropdown">Помощь маме</a>
+                    <ul class="submenu">
+                        <li><a class="menu_mini" href="#">Видеокурс детство на 5</a></li>
+                        <li><a class="menu_mini" href="#">Самый лучший логопед</a></li>
+                        <li><a class="menu_mini" href="#">Бесплатные пособия</a></li>
+                        <li><a class="menu_mini" href="#">Статьи о развитии ребенка</a></li>
+                    </ul>
+                </li>
+                <li><a class="menu dropdown">Специалистам</a>
+                    <ul class="submenu">
+                        <li><a class="menu_mini" href="#">Статьи для логопедов</a></li>
+                        <li><a class="menu_mini" href="#">Видео с занятий</a></li>
+                        <li><a class="menu_mini" href="#">Вебинары</a></li>
+                        <li><a class="menu_mini" href="#">Фотоархив с выездных семинаров Н.Пятибратовой</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class="menu notdropdown">Магазин</a></li>
+                <li><a href="" class="menu notdropdown">Контакты</a></li>
+            </ul>
+            <span class="telephone phone">+7 916 739 46 47</span>
+            <span class="email"><a class="phone" href="">nata_757575@mail.ru</a></span>
+            <a class="lilac_button">Перезвоните мне</a>
+            <div class="social">
+                <a class="vk" href="#"></a>
+                <a class="whatsapp" href="#"></a>
+                <a class="telegram" href="#"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END HUMBURGER -->
+
+<div class="blur_container">
+
+    <!-- HEADER -->
+    <header>
+        <div class="wrapper">
+
+            <a href="" class="logo"><img src="css/images/logo.svg"/></a>
+            <ul>
+                <li><a href="" class="menu notdropdown">Учебный центр</a></li>
+                <li><a href="" class="menu notdropdown">Новости</a></li>
+                <li><a class="menu dropdown">Помощь маме</a>
+                    <ul class="submenu">
+                        <li><a class="menu_mini" href="#">Видеокурс детство на 5</a></li>
+                        <li><a class="menu_mini" href="#">Самый лучший логопед</a></li>
+                        <li><a class="menu_mini" href="#">Бесплатные пособия</a></li>
+                        <li><a class="menu_mini" href="#">Статьи о развитии ребенка</a></li>
+                    </ul>
+                </li>
+                <li><a class="menu dropdown">Специалистам</a>
+                    <ul class="submenu">
+                        <li><a class="menu_mini" href="#">Статьи для логопедов</a></li>
+                        <li><a class="menu_mini" href="#">Видео с занятий</a></li>
+                        <li><a class="menu_mini" href="#">Вебинары</a></li>
+                        <li><a class="menu_mini" href="#">Фотоархив с выездных семинаров Н.Пятибратовой</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class="menu notdropdown">Магазин</a></li>
+                <li><a href="" class="menu notdropdown">Контакты</a></li>
+            </ul>
+            <a class="telegram" href="#"></a>
+            <a class="whatsapp" href="#"></a>
+            <span class="phone">+7 916 739 46 47</span>
+            <a class="vk" href="#"></a>
+
+        </div>
+    </header>
+
+    <!-- BREAD CRUMBS -->
+    <div class="container bread_crumbs cards_back" itemscope itemtype="http://schema.org/BreadcrumbList">
+        <div class="wrapper">
+            <a href="/" title="Главная" itemprop="item">
+                <span itemprop="name">Главная</span>
+            </a>
+            <a href="/metodiki/" title="Методики и кейсы Наталии Пятибратовой" itemprop="item">
+                <span itemprop="name">Методики и кейсы Наталии Пятибратовой</span>
+            </a><a>Методика обучения детей 3-6 лет основам математики </a>
+        </div>
+    </div>
+
+<div class="_uni_details">
+
+    <div class="container _uni_details_page cards_back _uni_details">
+        <div class="wrapper">
+            <h1>Методика обучения детей 3-6 лет основам математики </h1>
+            <div class="main_content">
+                <div class="slider">
+                    <div class="swiper _uni_details_page_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/metodika3-6-let.jpg" /></div>
+                            <div class="swiper-slide"><img src="images/metodika3-6-let.jpg" /></div>
+                            <div class="swiper-slide"><img src="images/metodika3-6-let.jpg" /></div>
+                            <div class="swiper-slide"><img src="images/metodika3-6-let.jpg" /></div>
+                            <div class="swiper-slide"><img src="images/metodika3-6-let.jpg" /></div>
+                            <div class="swiper-slide"><img src="images/metodika3-6-let.jpg" /></div>
+                            <div class="swiper-slide"><img src="images/metodika3-6-let.jpg" /></div>
+                        </div>
+                    </div>
+                    <div class="study_swiper_button_prev"></div>
+                    <div class="study_swiper_button_next"></div>
+                    <div class="study_swiper_pagination"></div>
+                </div>
+                <div class="case_block">
+                    <h2 class="case_title">Учебный кейс ТОЛЬКО в электронном виде!</h2>
+                    <div class="case_support">
+                        <div class="case_support_text">При покупке кейса вам будет доступна постоянная кураторская поддержка</div>
+                        <a class="case_support_button lilac_button" href="#">
+                            Подробнее<svg class="case_support_button_icon" width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.30779 0.522469C0.19062 0.639674 0.124798 0.798616 0.124798 0.964344C0.124798 1.13007 0.19062 1.28901 0.30779 1.40622L3.40154 4.49997L0.30779 7.59372C0.193941 7.7116 0.130945 7.86947 0.132369 8.03335C0.133792 8.19722 0.199523 8.35398 0.315403 8.46986C0.431283 8.58574 0.588041 8.65147 0.751914 8.65289C0.915787 8.65431 1.07366 8.59132 1.19154 8.47747L4.72716 4.94184C4.84433 4.82464 4.91016 4.6657 4.91016 4.49997C4.91016 4.33424 4.84433 4.1753 4.72716 4.05809L1.19154 0.522469C1.07433 0.4053 0.915392 0.339478 0.749665 0.339478C0.583937 0.339478 0.424994 0.4053 0.30779 0.522469Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="text">
+                    Купив кейс, вы можете получить Удостоверение гос образца о повышении квалификации 36&nbsp;ч. от онлайн-института "Дефектология проф".После изучения кейса напишите менеджеру:&nbsp; 8937-317-48-86<br>
+                    <br>
+                    Учебный кейс по дошкольной математике - это 10 видеоуроков от автора с готовыми материалами для занятий, которые нужно только распечатать. Чем отличается методика Пятибратовой от привычной дошкольной математики? Вы можете узнать это, посмотрев первый урок кейса или прочитав краткую информацию здесь.<br>
+                    <br>
+                    - обычно малышей учат счету с помощью счетного материала. В методике Пятибратовой используются числовые фигуры. Числовые фигуры - наш базовый математический материал, помогающий ребенку осознать количество, не пересчитывая его каждый раз, что свойственно многим ребятам и приводит к медленному сложению, вычитанию, пониманию состава числа. Важно, что с числовыми фигурами можно совершать действия, манипулировать, играть, получая числа из двух меньших. Числовые фигуры дают возможность восприятия числа вне зависимости от условий его восприятия и не требуют пересчитывания: например, за числом пять закреплены постоянные признаки: цвет, форма, размер и количество секторов. Ребенок с дискалькулией может не пересчитывать сектора, а опознавать ее, реагируя на цвет и форму числовой фигуры: голубая половинка круга – это всегда пять. Постоянство размера, формы, цвета и количества элементов помогает ребенку без труда определять множество, буквально «на глаз», что в разы облегчает переход к пониманию числа, его состава. После игр и упражнений с этим нерушимым единством ребенок легко усваивает абстрактные понятия: «число», «цифра», «состав числа», «сложение», «вычитание», Анализировать числа, модели которых много раз держал в руках, с которыми привык манипулировать, неизмеримо легче. Помогает тут и моторная память, и стереогностическое чувство, и тактильное восприятие. <br>
+                    <br>
+                    - активная игровая форма занятий - основа организации обучения по всем методикам Пятибратовой. Малыши почти не сидят за столами, играют на ковре, перемещаются вдоль настенных наглядных материалов.<br>
+                    <br>
+                    - мультисенсорный подход к изучению чисел: числовые фигуры бумажные, и деревянные, и магнитные. Деревянные числовые фигуры отличаются по весу и материалу от бумажных и магнитных; каждый материал имеет свое преимущество при формировании образа-представления числа)<br>
+                    <br>
+                    Магнитные трафареты цифр помогают ребенку научиться писать цифры сразу правильно и красиво. Магнитная математика продается на сайте "Русские магниты".<br>
+                    <br>
+                    В составе кейса:<br>
+                    <br>
+                    10 видеоуроков для педагога и мамы ( первый 2 ч.45 мин, остальные по 1 часу): <br>
+                    - все материалы для занятий и домашней работы<br>
+                    - видеозанятия с детьми<br>
+                    - видеоматериалы <br>
+                    - материалы для распечатки в папках «Рабочие листы», «Игры для распечатки», числовые фигуры, числовая лента, «Рабочая тетрадь» и многое другое.<br>
+                    -планы занятий<br>
+                    - литература<br>
+                    - презентации видеоуроков<br>
+                    - записи онлайн занятий<br>
+                    - интерактивные игры для оналайн-занятий с видеоинструкциями <br>
+                    <br>
+                    <br>
+                    Возможна рассрочка. В этом случае вы оплачиваете 50% от стоимости и получаете 5 уроков со всем материалами. В любое время вы можете доплатить остаток и получить вторую половину кейса.<br>
+                </div>
+            </div>
+            <!--Добавила классс study_price -->
+            <span class="case_price">10 000  ₽</span>
+            <div class="buttons">
+                <a class="lilac_button" onclick="PopUpShow('keis_request_form');">Купить кейс</a>
+                <a class="show_video" onclick="PopUpShow('show_video_popup', 'oWRTctlSwrE/edit');">Смотреть первый<br>урок кейса</a>
+            </div>
+        </div>
+    </div>
+    <div class="container case_program">
+        <div class="wrapper">
+            <h1>Программа курса</h1>
+            <dl>
+                <dt class="" style="">1 урок</dt>
+                <dd class="" style="">«Золотые правила» методики «Учусь считать на пять».<br>
+                    Базовый материал методики – числовые фигуры.<br>
+                    Оформление учебного пространства, подготовка пособий дома и в учреждении.<br>
+                    Организация индивидуальных и групповых занятий по методике «Учусь считать на пять». <br>
+                    Комплексные занятия: структура, содержание, организация <br>
+                    Что такое дискалькулия, ее виды, признаки, причины, факты, которые нужно знать.<br>
+                    Выявление дискалькулии и предрасположенности к ней  у детей 5-7 лет.<br>
+                    Принципы коррекционной работы.<br>
+                    Олигокалькули и обучение математике детей с ОВЗ (задержкой психического развития, умственной отсталостью, СДВГ).
+                </dd>
+                <dt class="" style="">2 урок</dt>
+                <dd class="" style="">•	Сенсорное развитие – фундамент умственного. Обзор самых необходимых игр и пособий для полноценного сенсорного развития. Опыт Монтессори-педагогики.
+                    •	Работа с количеством. Больше-меньше. Больше/меньше на один. Уравнивание количеств.
+                    •	Знакомство с числовыми фигурами 1-10 на сенсомоторном уровне.
+                    •	Знакомство с числами и цифрами от 1 до 5. Построение натурального ряда.
+                    •	Конструирование из числовых фигур по образцу.
+                </dd>
+                <dt class="" style="">3 урок</dt>
+                <dd class="" style="">•	Знакомство с числами и цифрами от 6 до 10.
+                    •	Сравнение чисел: знаки больше-меньше, равно.
+                    •	Больше/меньше на 2.
+                    •	 Игры с числовой лентой.
+                    •	Прямой счет  и обратное называние.
+                    •	Формирование понятия «больше, чем … на…». Ответ на вопрос: «На сколько.. больше, чем? Меньше, чем?»
+                </dd>
+                <dt class="" style="">4 урок</dt>
+                <dd class="" style="">•	Состав числа 10.
+                    •	Предыдущее и последующее число, соседи числа.
+                    •	Игры с числовой лентой.
+                </dd>
+                <dt class="hidden" style="display: none;">5 урок</dt>
+                <dd class="hidden" style="display: none;">Составы чисел 2-9.<br>
+                    Состав числа из единиц.<br>
+                    Введение нуля.<br>
+                    Игры с числовой лентой.<br></dd>
+                <dt class="hidden" style="display: none;">6 урок</dt>
+                <dd class="hidden" style="display: none;">•	Сложение и вычитание в пределах первого десятка (упрощенные примеры на сложение  и вычитание; обычные примеры; примеры с пропущенным компонентом)
+                    •	Для детей от 6 лет – начертание цифр в тетради в крупную клетку и запись выражений под диктовку и самостоятельно.
+                </dd>
+                <dt class="hidden" style="display: none;">7 урок</dt>
+                <dd class="hidden" style="display: none;">•	Четные-нечетные числа.
+                    •	Второй десяток (11-20), нумерация, прямой счет и обратное называние, «соседи числа», предыдущее и последующее число.
+                    •	Сравнение чисел второго десятка.
+                    •	Сложение и вычитание с переходом через первый десяток.
+                    •	Подготовка к теме «Замена разрядов» (на примере чисел второго десятка)
+                </dd>
+                <dt class="hidden" style="display: none;">8 урок</dt>
+                <dd class="hidden" style="display: none;">•	Двузначные числа. Построение, нумерация, разрядность.
+                    •	Сложение разрядных слагаемых: 34= 30+4. Вычитание единиц: 34-4=30.
+                    •	Круглые числа. Сложение круглых чисел. Сложение и вычитание круглого числа.
+                    •	Счет двойками, тройками, пятерками и десятками («счет с перепрыгиванием»)
+                </dd>
+                <dt class="hidden" style="display: none;">9 урок</dt>
+                <dd class="hidden" style="display: none;">•	Нумерация в сотне.
+                    •	Построение трехзначного числа.
+                    •	Сложение и вычитание целых сотен.
+                    •	Замена разрядов.
+                    •	Обучение решению простых задач.
+                    •	Игры с числовой лентой
+                    •	Монтессори-материал «Цепочка –сотня» со стрелками.
+                </dd>
+                <dt class="hidden" style="display: none;">10 урок</dt>
+                <dd class="hidden" style="display: none;">•	Сложение и вычитание двузначных без перехода и с переходом через десяток.
+                    •	Знакомство с нумерацией в пределах тысячи.
+                    •	Числовая фигура «тысяча». Построение 4-хзначных чисел.
+                    •	Монтессори-материал «Цепочка-тысяча» со стрелками.
+                    •	Зачем учить до школы вычислениям в пределах 100? Как быть ребенку в школе?
+
+                </dd>
+            </dl>
+            <a class="case_program__next lilac_button">Показать еще 4 из 10</a>
+        </div>
+    </div>
+    <div class="container case_result_video">
+        <div class="wrapper">
+            <h1>Результаты после прохождения методики</h1>
+            <div class="video_container">
+                <a onclick="PopUpShow('show_video_popup', 'OLeR5OUVh4g/edit');" class="text_semibold">
+                    <span><img src="/upload/iblock/86f/0e9sdyksj8pvhd8yt102khby4ksokjjf/IMG_9756.JPG"/></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="comp_d9242227ab2bf1b59ff9a1fd199477b9"><div class="container request">
+    <div class="wrapper">
+        <div class="left_column">
+            <h1>Оставьте заявку<br>на обучение ребенка</h1>
+            <p class="text">
+                Заполните форму<br>и дождитесь нашего звонка<br><br>
+                Задайте вопросы:<br>поможем во всем разобраться
+            </p>
+        </div>
+        <div class="right_column">
+
+            <form name="SIMPLE_FORM_1" action="/metodiki/metodika-obucheniya-detey-3-6-let-osnovam-matematiki-/" method="POST" enctype="multipart/form-data"><input type="hidden" name="bxajaxid" id="bxajaxid_d9242227ab2bf1b59ff9a1fd199477b9_8BACKi" value="d9242227ab2bf1b59ff9a1fd199477b9" /><input type="hidden" name="AJAX_CALL" value="Y" /><input type="hidden" name="sessid" id="sessid" value="0441eeb285daf9ecbfd9a2b052acc621" /><input type="hidden" name="WEB_FORM_ID" value="1" />			<div class="right_column_countainer">
+                <input placeholder="* Имя" type="text" class="inputtext" name="form_text_1" value="" required>
+                <input type="tel" placeholder="* Телефон" class="inputtext mask_phone" name="form_text_2" value="" required pattern="[+789][0-9]{9,11}">
+                <input type="hidden" name="form_text_30" value="a.deryugina_radost@mail.ru">
+                <input style="width: 100%;" class="lilac_button" type="submit" name="web_form_submit" value="Отправить заявку" />
+                <span>Нажимая кнопку «Отправить заявку», Вы даете согласие на обработку <a href="/privacy-policy/">персональных данных</a></span>
+            </div>
+            </form>		</div>
+    </div>
+</div>
+</div><div id="comp_2a5b3420669576eea9dc657b2ca8aa62">
+    <div class="_pop_container HidePopUp"  id="posobiya_request_form">
+        <div class="_pop_window">
+            <div class="_pop_close"></div>
+
+            <form name="SIMPLE_FORM_7" action="/metodiki/metodika-obucheniya-detey-3-6-let-osnovam-matematiki-/" method="POST" enctype="multipart/form-data"><input type="hidden" name="bxajaxid" id="bxajaxid_2a5b3420669576eea9dc657b2ca8aa62_Ar8Szp" value="2a5b3420669576eea9dc657b2ca8aa62" /><input type="hidden" name="AJAX_CALL" value="Y" /><input type="hidden" name="sessid" id="sessid_1" value="0441eeb285daf9ecbfd9a2b052acc621" /><input type="hidden" name="WEB_FORM_ID" value="7" />		<div class="_pop_window_content_container">
+                <h1>Купить пособие</h1>
+                <p class="text">Заполните форму и дождитесь нашего звонка - мы поможем вам во всем разобраться</p>
+                <input placeholder="* Имя" type="text" class="inputtext" name="form_text_24" value="" required>
+                <input type="tel" placeholder="* Телефон" class="inputtext mask_phone" name="form_text_25" value="" required pattern="[+789][0-9]{9,11}">
+                <input placeholder="* Email" type="text" class="inputtext" name="form_text_26" value="" required pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                <input type="hidden" name="form_text_34" value="nata_757575@mail.ru">
+                <input class="lilac_button" type="submit" name="web_form_submit" value="Отправить заявку" />
+                <span>Нажимая кнопку «Отправить заявку», Вы даете согласие на обработку <a href="/privacy-policy/">персональных данных</a></span>
+            </div>
+            </form>	</div>
+    </div>
+</div><div id="comp_d4129c9424672b1ecb3ba277a7dedc3b">
+    <div class="_pop_container HidePopUp"  id="keis_request_form">
+        <div class="_pop_window">
+            <div class="_pop_close"></div>
+
+            <form name="SIMPLE_FORM_8" action="/metodiki/metodika-obucheniya-detey-3-6-let-osnovam-matematiki-/" method="POST" enctype="multipart/form-data"><input type="hidden" name="bxajaxid" id="bxajaxid_d4129c9424672b1ecb3ba277a7dedc3b_XrQFCj" value="d4129c9424672b1ecb3ba277a7dedc3b" /><input type="hidden" name="AJAX_CALL" value="Y" /><input type="hidden" name="sessid" id="sessid_2" value="0441eeb285daf9ecbfd9a2b052acc621" /><input type="hidden" name="WEB_FORM_ID" value="8" />		<div class="_pop_window_content_container">
+                <h1>Купить кейс в электронном виде</h1>
+                <p class="text">Заполните форму и дождитесь нашего звонка - мы поможем вам во всем разобраться</p>
+                <input placeholder="* Имя" type="text" class="inputtext" name="form_text_27" value="" required >
+                <input type="tel" placeholder="* Телефон" class="inputtext mask_phone" name="form_text_28" value="" required pattern="[+789][0-9]{9,11}" >
+                <input placeholder="* Email" type="text" class="inputtext" name="form_text_29" value="" required pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+                <input type="hidden" name="form_text_35" value="nata_757575@mail.ru">
+                <input class="lilac_button" type="submit" name="web_form_submit" value="Отправить заявку" />
+                <span>Нажимая кнопку «Отправить заявку», Вы даете согласие на обработку <a href="/privacy-policy/">персональных данных</a></span>
+            </div>
+            </form>	</div>
+    </div>
+</div>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="scroll_to_top"></div>
+
+        <div class="wrapper desktop">
+            <div class="left_column">
+                <a href="" class="logo"><img src="css/images/logo.svg"/></a>
+                <span class="copy">2022 &copy; Наталия Пятибратова</span>
+                <span class="privacy"><a href="">Политика конфиденциальности</a></span>
+            </div>
+            <ul>
+                <li><a href="#">Учебный центр</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Видеокурс детство на 5</a></li>
+                <li><a href="#">Самый лучший логопед</a></li>
+                <li><a href="#">Бесплатные пособия</a></li>
+                <li><a href="#">Статьи о развитии ребенка</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Статьи для логопедов</a></li>
+                <li><a href="#">Видео с занятий</a></li>
+                <li><a href="#">Вебинары</a></li>
+                <li><a href="#">Фотоархив семинаров</a></li>
+            </ul>
+            <div class="right_column">
+                <span class="footer_phone">+7 916 739 46 47</span>
+                <span class="footer_email"><a href="">nata_757575@mail.ru</a></span>
+                <div class="social">
+                    <a class="vk" href="#"></a>
+                    <a class="whatsapp" href="#"></a>
+                    <a class="telegram" href="#"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper tablet">
+
+            <div class="left_column">
+                <a href="" class="logo"><img src="css/images/logo.svg"/></a>
+            </div>
+
+            <div class="center_column">
+                <span class="footer_phone">+7 916 739 46 47</span>
+                <span class="footer_email"><a href="">nata_757575@mail.ru</a></span>
+                <span class="privacy"><a href="">Политика конфиденциальности</a></span>
+            </div>
+
+            <div class="right_column">
+                <div class="social">
+                    <a class="vk" href="#"></a>
+                    <a class="whatsapp" href="#"></a>
+                    <a class="telegram" href="#"></a>
+                </div>
+                <span class="copy">2022 &copy; Наталия Пятибратова</span>
+            </div>
+
+        </div>
+
+        <div class="wrapper mobile">
+
+            <div class="center_column">
+                <div class="left_column">
+                    <span class="footer_phone">+7 916 739 46 47</span>
+                    <span class="footer_email"><a href="">nata_757575@mail.ru</a></span>
+                    <div class="social">
+                        <a class="vk" href="#"></a>
+                        <a class="whatsapp" href="#"></a>
+                        <a class="telegram" href="#"></a>
+                    </div>
+                </div>
+                <div class="right_column">
+                    <a href="" class="logo"><img src="css/images/logo.svg"/></a>
+                </div>
+            </div>
+            <span class="copy">2022 &copy; Наталия Пятибратова</span>
+            <span class="privacy"><a href="">Политика конфиденциальности</a></span>
+
+        </div>
+
+    </footer>
+
+</div>
+
+<!-- SCRIPS -->
+
+<script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+
+<script src="js/swiper/swiper-bundle.min.js"></script>
+
+<script src="js/scripts.js"></script>
+
+</body>
+
+</html>

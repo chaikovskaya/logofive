@@ -1516,7 +1516,7 @@
         ._uni_details_page span                    { margin: 0 0 15px 0; display: block; font: 17px/23px 'Nunito_SemiBold', Arial; font-style: normal; font-weight: 600; color: #000000; }
         ._uni_details_page p                       { margin: 0 0 15px 0; }
 
-        ._uni_details_page .main_content .slider                   { width: 323px; float: left; margin: 0 15px 10px 0; }
+        ._uni_details_page .main_content .slider                   { width: 323px; float: left; margin: 0 30px 10px 0; }
         ._uni_details_page .main_content .swiper                   { width: 323px; height: 323px; }
         ._uni_details_page .main_content .swiper-slide img         { border-radius: 15px; }
 
@@ -1524,7 +1524,7 @@
         ._uni_details_page li                       { list-style: disc inside; margin: 0 0 0 0; }
 
 
-        ._uni_details_page .buttons                                { margin: 35px 0 0 0; padding: 0; box-sizing: border-box; width: 100%; float: left; display: flex; justify-content: flex-start; align-items: center; }
+        ._uni_details_page .buttons                                { margin: 0; padding: 0; box-sizing: border-box; width: 100%; float: left; display: flex; justify-content: flex-start; align-items: center; }
 
         ._uni_details_page .study_swiper_button_prev                { left: 10px;  }
         ._uni_details_page .study_swiper_button_next                { right: 10px; }
@@ -1558,17 +1558,17 @@
         ._uni_details_page                         { margin: 0 0 50px 0; padding: 50px 0 50px 0; }
         ._uni_details_page .wrapper                { width: calc(100% - 40px); padding: 0;  }
 
-        ._uni_details_page .main_content           { margin: 25px 0 30px 0; padding: 0; width: 100%; display: flex; align-items: center; flex-direction: column; font: 13px/16px 'Montserrat_Regular', Arial; font-style: normal; font-weight: 400; color: #000000; }
+        ._uni_details_page .main_content           { margin: 25px 0 15px 0; padding: 0; width: 100%; display: flex; align-items: center; flex-direction: column; font: 13px/16px 'Montserrat_Regular', Arial; font-style: normal; font-weight: 400; color: #000000; }
         ._uni_details_page h2                      { margin: 0 0 15px 0; }
         ._uni_details_page p                       { margin: 0 0 15px 0; }
         ._uni_details_page span                    { text-align: left; width: 100%; margin: 0 0 15px 0; font: 20px/27px 'Nunito_SemiBold', Arial; }
 
-        ._uni_details_page .main_content .slider                   { width: 100%; margin: 0 0 15px 0; }
+        ._uni_details_page .main_content .slider                   { width: 100%; margin: 0 0 30px 0; }
         ._uni_details_page .main_content .swiper                   { width: calc(100% - 100px); height: auto; }
         ._uni_details_page .main_content .swiper-slide             { height: 235px; }
         ._uni_details_page .main_content .swiper-slide img         { border-radius: 15px;  ; }
 
-        ._uni_details_page .buttons                                { margin: 30px 0 0 0; padding: 0; width: 100%; display: flex; align-items: center; flex-direction: column; }
+        ._uni_details_page .buttons                                { margin: 0; padding: 0; width: 100%; display: flex; align-items: center; flex-direction: column; }
 
         ._uni_details_page .buttons .show_video                    { margin: 0 0 30px 0; order: -1; }
 

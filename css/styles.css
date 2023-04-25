@@ -1,3 +1,29 @@
+
+/* simplebar */
+.simplebar-scrollbar:before {
+    background: #7730DF;
+}
+.simplebar-scrollbar.simplebar-visible:before {
+    opacity: 1;
+}
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+    height: 5px;
+}
+
+
+.green_button {
+    min-height: 54px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    background-color: #00E676;
+}
+.green_button:hover {
+    background-color: #02D46E;
+}
+.green_button:active {
+    background-color: #02B75F;
+}
+
 /* video_course */
 .video_course {
     margin-top: 100px;
@@ -303,5 +329,710 @@
     }
     .educational_audience_important_icon {
         margin-bottom: 18px;
+    }
+}
+
+/* case */
+._uni_details_page .case_price {
+    padding-left: 546px;
+    margin-bottom: 25px;
+}
+.case_block {
+}
+.case_support {
+    box-sizing: border-box;
+    min-height: 191px;
+    padding: 30px;
+    margin-bottom: 30px;
+    background: linear-gradient(80.3deg, #FCEAE5 24.21%, #EDE1F7 115.51%);
+    border-radius: 20px;
+    text-align: center;
+}
+.case_support_text {
+    margin-bottom: 30px;
+    font-family: 'Nunito_Bold', Arial;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+}
+.case_support_button {
+    margin-left: auto;
+    margin-right: auto;
+}
+.case_support_button_icon {
+    margin-left: 13px;
+}
+._uni_details_page .case_title {}
+
+@media screen and (max-device-width: 1320px)
+{
+    ._uni_details_page .case_price {
+        margin-bottom: 10px;
+        padding-top: 15px;
+        padding-left: 0;
+        font-weight: 700;
+    }
+    .case_block {
+        display: flex;
+        flex-direction: column;
+    }
+    .case_support {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        order: -1;
+        min-height: 323px;
+    }
+    .case_support_text {
+        font-size: 17px;
+        line-height: 23px;
+    }
+    ._uni_details_page .case_title {
+        width: 650px;
+        margin-left: -352px;
+    }
+}
+@media screen and (max-device-width: 719px)
+{
+    ._uni_details_page .case_price {
+        padding-top: 0;
+    }
+    .case_support {
+        min-height: 168px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    .case_support_text {
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        font-family: 'Montserrat_SemiBold', Arial;
+    }
+    ._uni_details_page .case_title {
+        width: auto;
+        margin-left: 0;
+    }
+}
+
+/* curator_support */
+.curator_support_info {
+    margin-bottom: 100px;
+}
+.curator_support_info h1 {
+    margin-bottom: 30px;
+}
+.curator_support_info_content {
+    max-width: 710px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.online-exercise_info .curator_support_info_content {
+    max-width: 755px;
+}
+
+
+.curator_support_advantages  {
+    padding-bottom: 100px;
+}
+.curator_support_advantages .wrapper {
+    width: 1280px; background: linear-gradient(80.3deg, #FCEAE5 24.21%, #EDE1F7 115.51%); padding: 80px 100px; box-sizing: border-box;
+    border-radius: 30px;
+}
+.curator_support_advantages_block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.curator_support_advantages .wrapper .left_column h1            { font-size: 25px; line-height: 34px; font-weight: 600; text-align: left; padding: 0 0 30px 0; }
+.curator_support_advantages .wrapper .left_column h2            { text-align: left;color: #7730DF; padding: 0 0 10px 0;  }
+.curator_support_advantages .wrapper .left_column p             { padding: 0 0 30px 0; }
+.curator_support_advantages .wrapper .left_column            {
+    width: 586px;
+}
+.curator_support_advantages .wrapper .left_column img        {  display: none; }
+
+.curator_support_advantages .wrapper .right_column           {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 414px;
+    height: 100%;
+}
+
+.curator_support_advantages .wrapper .right_column .image_wrapper  { display: block; width: 100%; height: 100%; border-radius: 30px; object-fit: cover; }
+.curator_support_advantages_content ul {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.curator_support_advantages_content ul li {
+    list-style: initial;
+}
+
+
+.curator_support_consultation {
+    margin-top: 0;
+}
+.curator_support_consultation_title {
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.curator_support_consultation_button {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.curator_support_consultation_button_wide {
+    min-width: 246px;
+}
+.curator_support_consultation_button_icon {
+    vertical-align: middle;
+    margin-top: -1px;
+    margin-right: 10px;
+}
+.curator_support_consultation .text {
+    position: relative;
+    top: 0;
+    height: auto;
+    min-height: 250px;
+    transition: top 0.3s ease-out;
+}
+.curator_support_consultation .text:hover {
+    top: -10px;
+    margin-top: 0;
+}
+.curator_support_consultation span b {
+    font-size: inherit;
+    display: inline;
+    line-height: inherit;
+    color: inherit;
+}
+
+
+
+.curator_support_mentors     { margin-bottom: 70px; }
+.curator_support_mentors .wrapper            { }
+.curator_support_mentors h3                  { margin: 0 0 20px 0; text-align: center; }
+.curator_support_mentors h4                  { margin: 0 0 30px 0; font: 16px/20px 'Montserrat_Medium', Arial; font-style: normal; font-weight: 500; color: #7730DF; text-align: center; }
+.curator_support_mentors p                   { margin: 0 0 30px 0; text-align: center; flex: 1 0 auto; font-size: 14px; line-height: 17px;}
+.curator_support_mentors ul                  { width: calc(100% + 31px); display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; margin: 50px 0 0 0; }
+.curator_support_mentors li                  { width: calc(33% - 26px); margin: 0 30px 30px 0; transition: all 0.3s ease-out; }
+.curator_support_mentors_block                { display: flex; flex-direction: column; height: 100%; text-decoration: none; color: #000000; transition: all 0.3s ease-out; }
+.curator_support_mentors_block:hover            { margin-top: -10px; }
+.curator_support_mentors li .lilac_button    { margin: auto; width: 246px;  }
+.curator_support_mentors_block:hover          { margin-top: -10px; margin-bottom: 10px; }
+.curator_support_mentors .wrapper .violet_button    { margin: 60px auto 0 auto; display: table; }
+.curator_support_mentors li .item_footer              { background-color: #F1F3F6; flex: 1 0 auto; display: flex; flex-direction: column; padding: 30px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.curator_support_mentors li .item_footer p            { color: #7E7E7E; }
+.curator_support_mentors img            { width: 100%; height: 239px; object-fit: cover; object-position: center top; border-top-left-radius: 10px; border-top-right-radius: 10px; }
+.curator_support_mentors h1 {
+    margin-bottom: 30px;
+}
+.curator_support_mentors_info {
+    max-width: 582px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.curator_support_mentors_price {
+    font-family: 'Nunito_SemiBold', Arial;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    text-align: center;
+    color: #7730DF;
+}
+.curator_support_mentors_label {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #7730DF;
+    font-family: 'Montserrat_Medium', Arial;
+}
+.curator_support_mentors_button {}
+.curator_support_mentors_button_icon {
+    vertical-align: middle;
+    margin-top: -1px;
+    margin-right: 10px;
+}
+
+
+.curator_support_gallery {
+    background-color: transparent;
+}
+
+
+.curator_support_nav {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.curator_support_nav_block {
+    overflow: hidden;
+}
+.curator_support_nav_list {
+    display: flex;
+}
+.curator_support_nav_item {
+    height: auto;
+    min-height: 100%;
+}
+.curator_support_nav_link {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 106px;
+    height: 100%;
+    padding: 30px;
+    background-color: #F1F3F6;
+    border-radius: 20px;
+    font-family: 'Nunito_Bold', Arial;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+.curator_support_nav_link:hover {
+    background-color: #7730DF;
+    color: #fff;
+}
+.curator_support_nav_item_active .curator_support_nav_link {
+    background-color: #7730DF;
+    color: #fff;
+}
+.curator_support_nav_label {
+    display: block;
+    max-width: 267px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.online-exercise_mentors ul {
+    justify-content: center;
+}
+.online-exercise_mentors .curator_support_mentors_price {
+    margin-bottom: 30px;
+}
+.online-exercise_mentors_button_label_mob {
+    display: none;
+}
+
+
+.webinar_schedule_info {
+    margin-bottom: 100px;
+}
+.webinar_schedule_info h1 {
+    max-width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.webinar_schedule_advantages_text {
+    padding-bottom: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Montserrat_Regular', Arial;
+}
+.curator_support_advantages .wrapper .left_column h2 {
+    padding-bottom: 30px;
+}
+.webinar_schedule_advantages_price {
+    padding-bottom: 30px;
+    font-family: 'Montserrat_Semibold', Arial;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+.webinar_schedule_advantages_price_label {
+    white-space: nowrap;
+}
+.webinar_schedule_advantages_button {
+    min-width: 246px;
+}
+.webinar_schedule_advantages_button_icon {
+    vertical-align: middle;
+    margin-top: -1px;
+    margin-right: 10px;
+}
+
+
+.webinar_schedule_table {
+    margin-bottom: 100px;
+}
+.webinar_schedule_table_block {
+    margin-bottom: 70px;
+    margin-top: -30px;
+    margin-left: -30px;
+    margin-right: -30px;
+}
+.webinar_schedule_table_inner {
+    padding: 30px;
+}
+.webinar_schedule_table .price_of_classes {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.webinar_schedule_table .price_of_classes dl:first-of-type {
+    height: auto;
+    min-height: 62px;
+}
+.webinar_schedule_table .price_of_classes dt span {
+    margin-top: 5px;
+}
+.webinar_schedule_table_button {
+    min-width: 246px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.webinar_schedule_table_button_icon {
+    vertical-align: middle;
+    margin-top: -1px;
+    margin-right: 10px;
+}
+.webinar_schedule_table_more {
+    margin-left: auto;
+    margin-right: auto;
+}
+.webinar_schedule_table_date {
+    display: block;
+    max-width: 144px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media screen and (min-device-width: 1320px)
+{
+    .curator_support_consultation .text {
+        font-size: 14px;
+    }
+}
+@media screen and (max-device-width: 1320px) and (min-device-width: 719px) {
+    .curator_support_nav .wrapper {
+        width: 660px;
+    }
+
+    .curator_support_advantages .wrapper {
+        width: 660px;
+        padding: 60px;
+    }
+    .curator_support_advantages .wrapper .left_column h2 {
+        padding-bottom: 5px;
+    }
+    .curator_support_advantages .wrapper .left_column p {
+        padding: 0 0 20px 0;
+    }
+    .curator_support_advantages .wrapper .left_column {
+        width: 52%;
+    }
+    .curator_support_advantages .wrapper .right_column {
+        width: 38%;
+    }
+    .curator_support_advantages .wrapper .right_column .image_wrapper {
+        border-radius: 10px;
+    }
+    .curator_support_advantages_content ul {
+        margin-bottom: 20px;
+    }
+
+    .curator_support_mentors .wrapper            { width: 660px; }
+}
+
+@media screen and (max-device-width: 1320px)
+{
+    .curator_support_nav {
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .curator_support_nav_link {
+        padding: 23px;
+        min-height: 98px;
+        font-family: 'Montserrat_SemiBold', Arial;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+
+    .curator_support_advantages {
+        padding-bottom: 50px;
+    }
+    .curator_support_advantages .wrapper .left_column h1 {
+        padding: 0 0 20px 0;
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: 700;
+    }
+
+    .curator_support_consultation .wrapper {
+        margin-top: 25px;
+    }
+    .curator_support_consultation_title {
+        max-width: 427px;
+    }
+    .curator_support_consultation .text {
+        padding: 20px;
+    }
+    .curator_support_consultation b {
+        margin-bottom: 10px;
+    }
+    .curator_support_consultation_button {
+        white-space: normal;
+    }
+    .curator_support_consultation_button_wide {
+        min-width: auto;
+    }
+    .curator_support_consultation_button_icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .curator_support_info {
+        margin-bottom: 30px;
+    }
+    .curator_support_info_content {
+        max-width: 435px;
+    }
+    .curator_support_info h1 {
+        margin-bottom: 23px;
+    }
+
+    .curator_support_mentors                     { margin-bottom: 20px; }
+    .curator_support_mentors h3                  { margin: 0 0 15px 0; }
+    .curator_support_mentors h4                  { margin: 0 0 23px 0; font: 13px/16px 'Montserrat_Regular', Arial;  }
+    .curator_support_mentors p                   { margin: 0 0 20px 0; font-size: 13px; line-height: 16px;}
+    .curator_support_mentors ul                  { width: calc(100% + 30px); display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; margin: 25px 0 0 0; }
+    .curator_support_mentors li                  { width: calc(50% - 30px); margin: 0 30px 30px 0; }
+    .curator_support_mentors_block                { display: flex; flex-direction: column; height: 100%; text-decoration: none; color: #000000; }
+    .curator_support_mentors li .lilac_button    { margin: auto; width: 190px; }
+    .curator_support_mentors_block:hover          { margin-top: 0px; margin-bottom: 0px; }
+    .curator_support_mentors .item_footer              { padding: 23px 20px; border-bottom-right-radius: 8px; border-bottom-left-radius: 10px; }
+    .curator_support_mentors_block:hover h3       { color: #7730DF; }
+    .curator_support_mentors img            { width: 100%; height: 190px; object-fit: cover; object-position: center top; border-top-left-radius: 10px; border-top-right-radius: 10px; }
+    .curator_support_mentors .wrapper .violet_button    { margin: 20px auto 0 auto; }
+    .curator_support_mentors_info {
+        max-width: 435px;
+    }
+    .curator_support_mentors h1 {
+        margin-bottom: 23px;
+    }
+    .curator_support_mentors_price {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 23px;
+        font-family: 'Nunito_Bold', Arial;
+    }
+    .curator_support_mentors_label {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        font-family: 'Montserrat_SemiBold', Arial;
+    }
+    .curator_support_mentors_button {
+        min-width: 246px;
+    }
+
+
+    .online-exercise_info .curator_support_info_content {
+        max-width: 435px;
+    }
+
+    .online-exercise_mentors .curator_support_mentors_price {
+        margin-bottom: 24px;
+    }
+    .online-exercise_mentors_button_label {
+        display: none;
+    }
+    .online-exercise_mentors_button_label_mob {
+        display: inline;
+    }
+
+
+    .webinar_schedule_info {
+        margin-bottom: 25px;
+    }
+    .webinar_schedule_advantages_text {
+        padding-bottom: 10px;
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .curator_support_advantages .wrapper .left_column h2 {
+        padding-bottom: 20px;
+    }
+    .webinar_schedule_advantages_price {
+        padding-bottom: 20px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .webinar_schedule_table_button {
+        min-width: 143px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .webinar_schedule_table_button_icon {
+        display: block;
+        margin: 0 auto 10px;
+    }
+    .webinar_schedule_table_block {
+        margin-bottom: 20px;
+    }
+    .webinar_schedule_table .price_of_classes dl dt {
+        margin-right: 20px;
+    }
+    .webinar_schedule_table .price_of_classes dl dd:last-of-type {
+        margin-right: 20px;
+    }
+    .webinar_schedule_table {
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-device-width: 719px)
+{
+    .curator_support_nav {
+        overflow: hidden;
+        margin-top: 30px;
+    }
+    .curator_support_nav_block {
+        overflow: visible;
+    }
+    .curator_support_nav_item {
+        width: 210px;
+    }
+    .curator_support_nav_link {
+        min-height: 60px;
+        padding: 15px;
+        font-family: 'Montserrat_SemiBold', Arial;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .curator_support_consultation .text {
+        min-height: 152px;
+    }
+    .curator_support_consultation_button_icon {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+    .curator_support_info {
+        margin-bottom: 25px;
+    }
+    .curator_support_info h1 {
+        margin-bottom: 27px;
+    }
+    .curator_support_info_content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .curator_support_advantages .wrapper         { width: calc(100% - 40px); padding: 30px 18px; }
+
+    .curator_support_advantages .wrapper .left_column h1            { padding: 0 0 20px 0; text-align: center; }
+    .curator_support_advantages .wrapper .left_column h2            { text-align: center; }
+    .curator_support_advantages .wrapper .left_column p             { padding: 0 0 20px 0; text-align: center; }
+
+    .curator_support_advantages .wrapper .left_column            { width: 100%; display: flex; flex-direction: column; align-items: center; }
+    .curator_support_advantages .wrapper .left_column img        { display: block; border-radius: 30px; margin: 0 0 20px 0; width: 100%; border-radius: 10px; }
+    .curator_support_advantages .wrapper .right_column           {
+        position: static;
+        width: 100%;
+        height: 171px;
+        margin-bottom: 20px;
+    }
+    .curator_support_advantages .lilac_button                    { align-self: center; white-space: normal; width: 147px; margin: auto; }
+
+
+    .curator_support_mentors h1                  { width: 260px; margin: auto; }
+    .curator_support_mentors h3                  { margin: 0 0 15px 0; }
+    .curator_support_mentors h4                  { margin: 0 0 23px 0; font: 13px/16px 'Montserrat_Regular', Arial;  }
+    .curator_support_mentors p                   { margin: 0 0 30px 0; }
+    .curator_support_mentors ul                  { width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; margin: 25px 0 0 0; }
+    .curator_support_mentors li                  { width: 100%; margin: 0 0 30px 0; }
+    .curator_support_mentors_block                { display: flex; flex-direction: column; height: 100%; text-decoration: none; color: #000000; }
+    .curator_support_mentors li .lilac_button    { margin: auto; width: 147px; }
+    .curator_support_mentors_block:hover          { margin-top: 0px; margin-bottom: 0px; }
+    .curator_support_mentors .item_footer              { padding: 23px 20px; border-bottom-right-radius: 8px; border-bottom-left-radius: 10px; }
+    .curator_support_mentors_block:hover h3       { color: #7730DF; }
+    .curator_support_mentors img            { width: 100%; height: 165px; object-fit: cover; object-position: center top; border-top-left-radius: 10px; border-top-right-radius: 10px; }
+    .curator_support_mentors .wrapper .violet_button    { margin: 20px auto 0 auto; }
+    .curator_support_mentors_info {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .curator_support_mentors h3 {
+        font-size: 17px;
+        line-height: 21px;
+    }
+    .curator_support_mentors h4 {
+        margin-bottom: 20px;
+    }
+    .curator_support_mentors_price {
+        margin-bottom: 5px;
+    }
+    .curator_support_mentors_label {
+        margin-bottom: 20px;
+        font-size: 17px;
+        line-height: 23px;
+    }
+    .curator_support_mentors p {
+        margin-bottom: 20px;
+    }
+    .curator_support_mentors_button {
+        min-width: 169px;
+    }
+    .curator_support_mentors img {
+        min-height: 260px;
+    }
+
+    .webinar_schedule_advantages_text {
+        padding-bottom: 5px;
+        text-align: center;
+    }
+    .curator_support_advantages .wrapper .right_column {
+        order: -1;
+    }
+    .webinar_schedule_advantages_price {
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+    }
+    .webinar_schedule_advantages_button {
+        min-width: 187px;
+    }
+    .webinar_schedule_table_block {
+        overflow: auto;
+        margin-bottom: 30px;
+    }
+    .webinar_schedule_table_block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .webinar_schedule_table_inner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .webinar_schedule_table .price_of_classes {
+        min-width: 640px;
+    }
+    .webinar_schedule_table .price_of_classes dl dt {
+        width: 230px;
+    }
+    .webinar_schedule_table .simplebar-track {
+        bottom: 10px;
+    }
+}
+@media screen and (max-device-width: 400px)
+{
+    .curator_support_mentors img {
+        min-height: 165px;
     }
 }

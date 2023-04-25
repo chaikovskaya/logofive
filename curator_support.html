@@ -1,0 +1,521 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover, user-scalable=no">
+
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex">
+
+        <title>EDUCATION FULLTIME Page</title>
+
+        <!-- CSS FOR SWIPER -->
+        <link rel="stylesheet" type="text/css" href="js/swiper/swiper-bundle.min.css"/>
+
+        <!-- CSS STYLES -->
+        <link type="text/css" rel="stylesheet" href="css/layout.css" />
+        <link type="text/css" rel="stylesheet" href="css/main_page.css" />
+        <link type="text/css" rel="stylesheet" href="css/internal_pages.css" />
+
+        <link type="text/css" rel="stylesheet" href="css/styles.css" />
+
+    </head>
+
+    <body>
+
+
+        <!--  POPUPS -->
+        <div class="_pop_container HidePopUp"  id="show_video_popup">
+            <div class="_pop_window">
+                <div class="_pop_close"></div>
+
+                <div class="video_container"></div>
+
+            </div>
+        </div>
+
+        <!-- EDUCATION REQUSET -->
+        <div class="_pop_container _pop_container_scroll HidePopUp"  id="education_request_form">
+
+            <div class="_pop_window">
+
+                <div class="_pop_close"></div>
+
+                <div class="_pop_scroll">
+
+                    <h1>Записать ребенка на очные занятия</h1>
+                    <p class="text">Заполните форму и дождитесь нашего звонка - мы поможем вам во всем разобраться</p>
+
+                    <div class="form_inputs">
+
+                        <select class="select" name="language">
+                            <option disabled>Выберите адрес центра</option>
+                            <option value="Adress_1">Можайское шоссе. дом 80-Б, бизнес-центр «Алькор»</option>
+                            <option value="Adress_2">Москва, Балаклавский пр-т., дом 23</option>
+                            <option value="Adress_3">Санкт-Петербург, Невский пр-т., дом 12</option>
+                        </select>
+
+                        <input placeholder="ФИО родителя полностью"/>
+
+                        <select class="select" name="language">
+                            <option disabled>Выберите курс</option>
+                            <option value="Training_course_1">«Дошкольник»</option>
+                            <option value="Training_course_2">«Русский язык без правил»</option>
+                            <option value="Training_course_3">«Пишу – и радуюсь!»</option>
+                            <option value="Training_course_4">«Учусь считать на пять»</option>
+                            <option value="Training_course_5">«Английский в радость»</option>
+                        </select>
+
+                        <input placeholder="* Email"/>
+                        <input placeholder="Возраст ребенка"/>
+                        <input placeholder="* Телефон"/>
+
+                    </div>
+
+                    <a onclick="PopUpClose('education_request_form'); PopUpShow('simple_request_form_send');" class="lilac_button">Отправить заявку</a>
+                    <span class="consent_processing">Нажимая кнопку «Отправить заявку», Вы даете согласие на обработку персональных данных</span>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- SIMPLY REQUSET -->
+        <div class="_pop_container HidePopUp"  id="simple_request_form">
+            <div class="_pop_window">
+                <div class="_pop_close"></div>
+                <h1>Записать ребенка на обучение</h1>
+                <p class="text">Заполните форму и дождитесь нашего звонка - мы поможем вам во всем разобраться</p>
+                <input placeholder="* Имя"/>
+                <input placeholder="* Телефон"/>
+                <input placeholder="* Email"/>
+                <a onclick="PopUpClose('simple_request_form'); PopUpShow('simple_request_form_send');" class="lilac_button">Отправить заявку</a>
+                <span>Нажимая кнопку «Отправить заявку», Вы даете согласие на обработку персональных данных</span>
+            </div>
+        </div>
+        <!-- SEND -->
+        <div class="_pop_container HidePopUp"  id="simple_request_form_send">
+            <div class="_pop_window">
+                <div class="_pop_close"></div>
+                <h2>Спасибо!<br>Ваша заявка успешно отправлена!</h2>
+                <a onclick="PopUpClose('simple_request_form_send');" class="lilac_button">Закрыть</a>
+            </div>
+        </div>
+
+        <!-- HUMBURGER -->
+        <div class="humburger_show"></div>
+
+        <div class="humburger_container">
+            <div class="humburger_scroll_box">
+                <div class="humburger">
+                    <div class="humburger_hide"></div>
+                    <a href="" class="logo"><img src="css/images/logo.svg"/></a>
+                    <ul>
+                        <li><a href="" class="menu notdropdown">Учебный центр</a></li>
+                        <li><a href="" class="menu notdropdown">Новости</a></li>
+                        <li><a class="menu dropdown">Помощь маме</a>
+                            <ul class="submenu">
+                                <li><a class="menu_mini" href="#">Видеокурс детство на 5</a></li>
+                                <li><a class="menu_mini" href="#">Самый лучший логопед</a></li>
+                                <li><a class="menu_mini" href="#">Бесплатные пособия</a></li>
+                                <li><a class="menu_mini" href="#">Статьи о развитии ребенка</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="menu dropdown">Специалистам</a>
+                            <ul class="submenu">
+                                <li><a class="menu_mini" href="#">Статьи для логопедов</a></li>
+                                <li><a class="menu_mini" href="#">Видео с занятий</a></li>
+                                <li><a class="menu_mini" href="#">Вебинары</a></li>
+                                <li><a class="menu_mini" href="#">Фотоархив с выездных семинаров Н.Пятибратовой</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" class="menu notdropdown">Магазин</a></li>
+                        <li><a href="" class="menu notdropdown">Контакты</a></li>
+                    </ul>
+                    <span class="telephone phone">+7 916 739 46 47</span>
+                    <span class="email"><a class="phone" href="">nata_757575@mail.ru</a></span>
+                    <a class="lilac_button">Перезвоните мне</a>
+                    <div class="social">
+                        <a class="vk" href="#"></a>
+                        <a class="whatsapp" href="#"></a>
+                        <a class="telegram" href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END HUMBURGER -->
+        
+        <div class="blur_container">
+
+        <!-- HEADER -->
+        <header>
+            <div class="wrapper">
+
+                <a href="" class="logo"><img src="css/images/logo.svg"/></a>
+                <ul>
+                    <li><a href="" class="menu notdropdown">Учебный центр</a></li>
+                    <li><a href="" class="menu notdropdown">Новости</a></li>
+                    <li><a class="menu dropdown">Помощь маме</a>
+                        <ul class="submenu">
+                            <li><a class="menu_mini" href="#">Видеокурс детство на 5</a></li>
+                            <li><a class="menu_mini" href="#">Самый лучший логопед</a></li>
+                            <li><a class="menu_mini" href="#">Бесплатные пособия</a></li>
+                            <li><a class="menu_mini" href="#">Статьи о развитии ребенка</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="menu dropdown">Специалистам</a>
+                        <ul class="submenu">
+                            <li><a class="menu_mini" href="#">Статьи для логопедов</a></li>
+                            <li><a class="menu_mini" href="#">Видео с занятий</a></li>
+                            <li><a class="menu_mini" href="#">Вебинары</a></li>
+                            <li><a class="menu_mini" href="#">Фотоархив с выездных семинаров Н.Пятибратовой</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="menu notdropdown">Магазин</a></li>
+                    <li><a href="" class="menu notdropdown">Контакты</a></li>
+                </ul>
+                <a class="telegram" href="#"></a>
+                <a class="whatsapp" href="#"></a>
+                <span class="phone">+7 916 739 46 47</span>
+                <a class="vk" href="#"></a>
+
+            </div>
+        </header>
+
+        <!-- BREAD CRUMBS -->
+        <div class="container bread_crumbs">
+            <div class="wrapper">
+                <a href="#">Главная</a> <a href="#">Обучение специалистов, кураторство и поддержка</a>
+            </div>
+        </div>
+
+        <div class="curator_support_nav container js-slider-curator-support-nav">
+            <div class="wrapper">
+                <div class="curator_support_nav_block js-slider-list">
+                    <ul class="curator_support_nav_list swiper-wrapper">
+                        <li class="curator_support_nav_item curator_support_nav_item_active swiper-slide">
+                            <a class="curator_support_nav_link" href="#">
+                                <span class="curator_support_nav_label">ПОСТЯННАЯ КУРАТОРСКАЯ ПОДДЕРЖКА</span>
+                            </a>
+                        </li>
+                        <li class="curator_support_nav_item swiper-slide">
+                            <a class="curator_support_nav_link" href="#">
+                                <span class="curator_support_nav_label">ОТКРЫТЫЕ ЗАНЯТИЯ В&nbsp;ОНЛАЙН-ФОРМАТЕ</span>
+                            </a>
+                        </li>
+                        <li class="curator_support_nav_item swiper-slide">
+                            <a class="curator_support_nav_link" href="#">
+                                <span class="curator_support_nav_label">РАСПИСАНИЕ ВЕБИНАРОВ НАТАЛИИ ПЯТИБРАТОВОЙ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- curator_support_info -->
+        <div class="curator_support_info container">
+            <div class="wrapper">
+                <h1>Постоянная кураторская поддержка</h1>
+                <div class="wrapper">
+                    <div class="curator_support_info_content text">при покупке любого учебного кейса вам откроется возможность приобретения доступа в группу Телеграм с поcтоянной кураторской поддержкой</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- curator_support_advantages -->
+        <div class="curator_support_advantages container">
+            <div class="wrapper">
+                <div class="curator_support_advantages_block">
+                    <div class="left_column">
+                        <h1>Что дает постоянная кураторская поддержка?</h1>
+                        <div class="right_column">
+                            <img class="image_wrapper" src="images/curator_support/curator_support_advantages_img_1.jpg"/>
+                        </div>
+                        <h2>В группе вы получите:</h2>
+                        <div class="curator_support_advantages_content text">
+                            <ul>
+                                <li>быструю помощь в работе со своим ребенком/учеником;</li>
+                                <li>ответ на любой вопрос по методике;</li>
+                                <li>новинки, которых нет в кейсе: презентации, игры, видео, ссылки и т.д.;</li>
+                                <li>участие в бесплатных вебинарах по темам кейса;</li>
+                                <li>общение с единомышленниками, обмен опытом.</li>
+                            </ul>
+                            <p>В каждой группе кураторам помогает автор методик - Наталия Пятибратова</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- curator_support_consultation -->
+        <div class="curator_support_consultation container consultation">
+            <h1 class="curator_support_consultation_title">Как попасть в группу с постоянной поддержкой?</h1>
+            <div class="wrapper">
+                <p class="text">
+                    <b>1</b>
+                    <span>купить учебный кейс на нашем сайте и полностью изучить его</span>
+                    <a class="curator_support_consultation_button lilac_button" href="#">Выбрать кейс</a>
+                </p>
+                <img src="css/images/main_slider_right_arrow.svg"/>
+                <p class="text">
+                    <b>2</b>
+                    <span>написать своему куратору для приобретения доступа в группу в Телеграме</span>
+                </p>
+                <img src="css/images/main_slider_right_arrow.svg"/>
+                <p class="text">
+                    <b>3</b>
+                    <span>получить инструкции от куратора и&nbsp;оплатить доступ в группу в Телеграме</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- curator_support_mentors -->
+        <div class="curator_support_mentors container">
+            <div class="wrapper">
+                <h1>Группы и кураторы</h1>
+                <div class="curator_support_mentors_info text">
+                    вы можете в любой момент выйти из группы и вернуться обратно, когда возникнет необходимость
+                </div>
+                <ul>
+                    <li>
+                        <div class="curator_support_mentors_block">
+                            <img src="images/curator_support/curator_support_mentors_img_1.png" alt="Пятибратова Наталия Владимировна" />
+                            <div class="item_footer">
+                                <h3>Пятибратова<br /> Наталия Владимировна</h3>
+                                <h4>Куратор по дислексии</h4>
+                                <p class="text">Учебный кейс «Читаем с радостью»</p>
+                                <div class="curator_support_mentors_price">700 ₽ / месяц</div>
+                                <div class="curator_support_mentors_label">автор методик</div>
+                                <a class="curator_support_mentors_button lilac_button green_button" href="#">
+                                    <svg class="curator_support_mentors_button_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.46 3.49207C19.3598 2.38078 18.0494 1.49967 16.6052 0.900132C15.1609 0.300593 13.6117 -0.00537614 12.048 7.14835e-05C5.496 7.14835e-05 0.156005 5.34007 0.156005 11.8921C0.156005 13.9921 0.708005 16.0321 1.74 17.8321L0.0600052 24.0001L6.36 22.3441C8.1 23.2921 10.056 23.7961 12.048 23.7961C18.6 23.7961 23.94 18.4561 23.94 11.9041C23.94 8.72407 22.704 5.73607 20.46 3.49207ZM12.048 21.7801C10.272 21.7801 8.532 21.3001 7.008 20.4001L6.648 20.1841L2.904 21.1681L3.9 17.5201L3.66 17.1481C2.6733 15.5724 2.14937 13.7512 2.148 11.8921C2.148 6.44407 6.588 2.00407 12.036 2.00407C14.676 2.00407 17.16 3.03607 19.02 4.90807C19.941 5.82482 20.6708 6.91526 21.1673 8.11618C21.6637 9.31709 21.9168 10.6046 21.912 11.9041C21.936 17.3521 17.496 21.7801 12.048 21.7801ZM17.472 14.3881C17.172 14.2441 15.708 13.5241 15.444 13.4161C15.168 13.3201 14.976 13.2721 14.772 13.5601C14.568 13.8601 14.004 14.5321 13.836 14.7241C13.668 14.9281 13.488 14.9521 13.188 14.7961C12.888 14.6521 11.928 14.3281 10.8 13.3201C9.912 12.5281 9.324 11.5561 9.144 11.2561C8.976 10.9561 9.12 10.8001 9.276 10.6441C9.408 10.5121 9.576 10.2961 9.72 10.1281C9.864 9.96007 9.924 9.82807 10.02 9.63607C10.116 9.43207 10.068 9.26407 9.996 9.12007C9.924 8.97607 9.324 7.51207 9.084 6.91207C8.844 6.33607 8.592 6.40807 8.412 6.39607H7.836C7.632 6.39607 7.32 6.46807 7.044 6.76807C6.78 7.06807 6.012 7.78807 6.012 9.25207C6.012 10.7161 7.08 12.1321 7.224 12.3241C7.368 12.5281 9.324 15.5281 12.3 16.8121C13.008 17.1241 13.56 17.3041 13.992 17.4361C14.7 17.6641 15.348 17.6281 15.864 17.5561C16.44 17.4721 17.628 16.8361 17.868 16.1401C18.12 15.4441 18.12 14.8561 18.036 14.7241C17.952 14.5921 17.772 14.5321 17.472 14.3881Z" fill="white"/>
+                                    </svg>Написать
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="curator_support_mentors_block">
+                            <img src="images/curator_support/curator_support_mentors_img_2.png" alt="Апраксина Елена Сергеевна" />
+                            <div class="item_footer">
+                                <h3>Апраксина<br /> Елена Сергеевна</h3>
+                                <h4>Куратор по русскому языку</h4>
+                                <p class="text">Учебный кейс «Русский язык без правил»</p>
+                                <div class="curator_support_mentors_price">500 ₽ / месяц</div>
+                                <div class="curator_support_mentors_label">+ помощь автора методик</div>
+                                <a class="curator_support_mentors_button lilac_button green_button" href="#">
+                                    <svg class="curator_support_mentors_button_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.46 3.49207C19.3598 2.38078 18.0494 1.49967 16.6052 0.900132C15.1609 0.300593 13.6117 -0.00537614 12.048 7.14835e-05C5.496 7.14835e-05 0.156005 5.34007 0.156005 11.8921C0.156005 13.9921 0.708005 16.0321 1.74 17.8321L0.0600052 24.0001L6.36 22.3441C8.1 23.2921 10.056 23.7961 12.048 23.7961C18.6 23.7961 23.94 18.4561 23.94 11.9041C23.94 8.72407 22.704 5.73607 20.46 3.49207ZM12.048 21.7801C10.272 21.7801 8.532 21.3001 7.008 20.4001L6.648 20.1841L2.904 21.1681L3.9 17.5201L3.66 17.1481C2.6733 15.5724 2.14937 13.7512 2.148 11.8921C2.148 6.44407 6.588 2.00407 12.036 2.00407C14.676 2.00407 17.16 3.03607 19.02 4.90807C19.941 5.82482 20.6708 6.91526 21.1673 8.11618C21.6637 9.31709 21.9168 10.6046 21.912 11.9041C21.936 17.3521 17.496 21.7801 12.048 21.7801ZM17.472 14.3881C17.172 14.2441 15.708 13.5241 15.444 13.4161C15.168 13.3201 14.976 13.2721 14.772 13.5601C14.568 13.8601 14.004 14.5321 13.836 14.7241C13.668 14.9281 13.488 14.9521 13.188 14.7961C12.888 14.6521 11.928 14.3281 10.8 13.3201C9.912 12.5281 9.324 11.5561 9.144 11.2561C8.976 10.9561 9.12 10.8001 9.276 10.6441C9.408 10.5121 9.576 10.2961 9.72 10.1281C9.864 9.96007 9.924 9.82807 10.02 9.63607C10.116 9.43207 10.068 9.26407 9.996 9.12007C9.924 8.97607 9.324 7.51207 9.084 6.91207C8.844 6.33607 8.592 6.40807 8.412 6.39607H7.836C7.632 6.39607 7.32 6.46807 7.044 6.76807C6.78 7.06807 6.012 7.78807 6.012 9.25207C6.012 10.7161 7.08 12.1321 7.224 12.3241C7.368 12.5281 9.324 15.5281 12.3 16.8121C13.008 17.1241 13.56 17.3041 13.992 17.4361C14.7 17.6641 15.348 17.6281 15.864 17.5561C16.44 17.4721 17.628 16.8361 17.868 16.1401C18.12 15.4441 18.12 14.8561 18.036 14.7241C17.952 14.5921 17.772 14.5321 17.472 14.3881Z" fill="white"/>
+                                    </svg>Написать
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="curator_support_mentors_block">
+                            <img src="images/curator_support/curator_support_mentors_img_3.png" alt="Энгель Видана Валентиновна" />
+                            <div class="item_footer">
+                                <h3>Энгель<br /> Видана Валентиновна</h3>
+                                <h4>Куратор по коррекции почерка</h4>
+                                <p class="text">Учебный кейс «Пишу и радуюсь»</p>
+                                <div class="curator_support_mentors_price">500 ₽ / месяц</div>
+                                <div class="curator_support_mentors_label">+ помощь автора методик</div>
+                                <a class="curator_support_mentors_button lilac_button green_button" href="#">
+                                    <svg class="curator_support_mentors_button_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.46 3.49207C19.3598 2.38078 18.0494 1.49967 16.6052 0.900132C15.1609 0.300593 13.6117 -0.00537614 12.048 7.14835e-05C5.496 7.14835e-05 0.156005 5.34007 0.156005 11.8921C0.156005 13.9921 0.708005 16.0321 1.74 17.8321L0.0600052 24.0001L6.36 22.3441C8.1 23.2921 10.056 23.7961 12.048 23.7961C18.6 23.7961 23.94 18.4561 23.94 11.9041C23.94 8.72407 22.704 5.73607 20.46 3.49207ZM12.048 21.7801C10.272 21.7801 8.532 21.3001 7.008 20.4001L6.648 20.1841L2.904 21.1681L3.9 17.5201L3.66 17.1481C2.6733 15.5724 2.14937 13.7512 2.148 11.8921C2.148 6.44407 6.588 2.00407 12.036 2.00407C14.676 2.00407 17.16 3.03607 19.02 4.90807C19.941 5.82482 20.6708 6.91526 21.1673 8.11618C21.6637 9.31709 21.9168 10.6046 21.912 11.9041C21.936 17.3521 17.496 21.7801 12.048 21.7801ZM17.472 14.3881C17.172 14.2441 15.708 13.5241 15.444 13.4161C15.168 13.3201 14.976 13.2721 14.772 13.5601C14.568 13.8601 14.004 14.5321 13.836 14.7241C13.668 14.9281 13.488 14.9521 13.188 14.7961C12.888 14.6521 11.928 14.3281 10.8 13.3201C9.912 12.5281 9.324 11.5561 9.144 11.2561C8.976 10.9561 9.12 10.8001 9.276 10.6441C9.408 10.5121 9.576 10.2961 9.72 10.1281C9.864 9.96007 9.924 9.82807 10.02 9.63607C10.116 9.43207 10.068 9.26407 9.996 9.12007C9.924 8.97607 9.324 7.51207 9.084 6.91207C8.844 6.33607 8.592 6.40807 8.412 6.39607H7.836C7.632 6.39607 7.32 6.46807 7.044 6.76807C6.78 7.06807 6.012 7.78807 6.012 9.25207C6.012 10.7161 7.08 12.1321 7.224 12.3241C7.368 12.5281 9.324 15.5281 12.3 16.8121C13.008 17.1241 13.56 17.3041 13.992 17.4361C14.7 17.6641 15.348 17.6281 15.864 17.5561C16.44 17.4721 17.628 16.8361 17.868 16.1401C18.12 15.4441 18.12 14.8561 18.036 14.7241C17.952 14.5921 17.772 14.5321 17.472 14.3881Z" fill="white"/>
+                                    </svg>Написать
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="curator_support_mentors_block">
+                            <img src="images/curator_support/curator_support_mentors_img_4.png" alt="Литвинцева Ольга Анатольевна" />
+                            <div class="item_footer">
+                                <h3>Литвинцева<br /> Ольга Анатольевна</h3>
+                                <h4>Куратор по математике</h4>
+                                <p class="text">Учебные кейсы «Дошкольная математика «Учусь считать на пять»», «Школьная математика.Корекция дискалькулии»</p>
+                                <div class="curator_support_mentors_price">500 ₽ / месяц</div>
+                                <div class="curator_support_mentors_label">+ помощь автора методик</div>
+                                <a class="curator_support_mentors_button lilac_button green_button" href="#">
+                                    <svg class="curator_support_mentors_button_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.46 3.49207C19.3598 2.38078 18.0494 1.49967 16.6052 0.900132C15.1609 0.300593 13.6117 -0.00537614 12.048 7.14835e-05C5.496 7.14835e-05 0.156005 5.34007 0.156005 11.8921C0.156005 13.9921 0.708005 16.0321 1.74 17.8321L0.0600052 24.0001L6.36 22.3441C8.1 23.2921 10.056 23.7961 12.048 23.7961C18.6 23.7961 23.94 18.4561 23.94 11.9041C23.94 8.72407 22.704 5.73607 20.46 3.49207ZM12.048 21.7801C10.272 21.7801 8.532 21.3001 7.008 20.4001L6.648 20.1841L2.904 21.1681L3.9 17.5201L3.66 17.1481C2.6733 15.5724 2.14937 13.7512 2.148 11.8921C2.148 6.44407 6.588 2.00407 12.036 2.00407C14.676 2.00407 17.16 3.03607 19.02 4.90807C19.941 5.82482 20.6708 6.91526 21.1673 8.11618C21.6637 9.31709 21.9168 10.6046 21.912 11.9041C21.936 17.3521 17.496 21.7801 12.048 21.7801ZM17.472 14.3881C17.172 14.2441 15.708 13.5241 15.444 13.4161C15.168 13.3201 14.976 13.2721 14.772 13.5601C14.568 13.8601 14.004 14.5321 13.836 14.7241C13.668 14.9281 13.488 14.9521 13.188 14.7961C12.888 14.6521 11.928 14.3281 10.8 13.3201C9.912 12.5281 9.324 11.5561 9.144 11.2561C8.976 10.9561 9.12 10.8001 9.276 10.6441C9.408 10.5121 9.576 10.2961 9.72 10.1281C9.864 9.96007 9.924 9.82807 10.02 9.63607C10.116 9.43207 10.068 9.26407 9.996 9.12007C9.924 8.97607 9.324 7.51207 9.084 6.91207C8.844 6.33607 8.592 6.40807 8.412 6.39607H7.836C7.632 6.39607 7.32 6.46807 7.044 6.76807C6.78 7.06807 6.012 7.78807 6.012 9.25207C6.012 10.7161 7.08 12.1321 7.224 12.3241C7.368 12.5281 9.324 15.5281 12.3 16.8121C13.008 17.1241 13.56 17.3041 13.992 17.4361C14.7 17.6641 15.348 17.6281 15.864 17.5561C16.44 17.4721 17.628 16.8361 17.868 16.1401C18.12 15.4441 18.12 14.8561 18.036 14.7241C17.952 14.5921 17.772 14.5321 17.472 14.3881Z" fill="white"/>
+                                    </svg>Написать
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- curator_support_gallery -->
+        <div class="container">
+            <div class="_pop_container HidePopUp"  id="docs_gallery_popup">
+                <div class="_pop_window">
+                    <div class="_pop_close"></div>
+                    <div class="swiper gallery_swiper gallery_slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide gallery_slide">
+                                <img src="images/curator_support/curator-support-gallery-img-1.png"/>
+                                <a target="_blank" href="images/curator_support/curator-support-gallery-img-1.png" class="lilac_button">Скачать</a>
+                            </div>
+                            <div class="swiper-slide gallery_slide">
+                                <img src="images/curator_support/curator-support-gallery-img-1.png"/>
+                                <a target="_blank" href="images/curator_support/curator-support-gallery-img-1.png" class="lilac_button">Скачать</a>
+                            </div>
+                            <div class="swiper-slide gallery_slide">
+                                <img src="images/curator_support/curator-support-gallery-img-1.png"/>
+                                <a target="_blank" href="images/curator_support/curator-support-gallery-img-1.png" class="lilac_button">Скачать</a>
+                            </div>
+                            <div class="swiper-slide gallery_slide">
+                                <img src="images/curator_support/curator-support-gallery-img-1.png"/>
+                                <a target="_blank" href="images/curator_support/curator-support-gallery-img-1.png" class="lilac_button">Скачать</a>
+                            </div>
+                            <div class="swiper-slide gallery_slide">
+                                <img src="images/curator_support/curator-support-gallery-img-1.png"/>
+                                <a target="_blank" href="images/curator_support/curator-support-gallery-img-1.png" class="lilac_button">Скачать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery_swiper_button_prev"></div>
+                    <div class="gallery_swiper_button_next"></div>
+                    <div class="gallery_swiper_pagination"></div>
+                </div>
+            </div>
+            <div class="curator_support_gallery patents">
+                <div class="wrapper">
+                    <h1>Так мы поддерживаем в группе:</h1>
+                    <div class="patents_swipper_crop">
+                        <div class="swiper patents_swiper patents_slider">
+                            <div class="swiper-wrapper ">
+                                <div class="swiper-slide patents_slide">
+                                    <a onclick="PopUpShowGallery('docs_gallery_popup', 1);"><img src="images/curator_support/curator-support-gallery-img-1.png"/></a>
+                                </div>
+                                <div class="swiper-slide patents_slide">
+                                    <a onclick="PopUpShowGallery('docs_gallery_popup', 2);"><img src="images/curator_support/curator-support-gallery-img-1.png"/></a>
+                                </div>
+                                <div class="swiper-slide patents_slide">
+                                    <a onclick="PopUpShowGallery('docs_gallery_popup', 3);"><img src="images/curator_support/curator-support-gallery-img-1.png"/></a>
+                                </div>
+                                <div class="swiper-slide patents_slide">
+                                    <a onclick="PopUpShowGallery('docs_gallery_popup', 4);"><img src="images/curator_support/curator-support-gallery-img-1.png"/></a>
+                                </div>
+                                <div class="swiper-slide patents_slide">
+                                    <a onclick="PopUpShowGallery('docs_gallery_popup', 5);"><img src="images/curator_support/curator-support-gallery-img-1.png"/></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+
+            <div class="scroll_to_top"></div>
+
+            <div class="wrapper desktop">
+                <div class="left_column">
+                    <a href="" class="logo"><img src="css/images/logo.svg"/></a>
+                    <span class="copy">2022 &copy; Наталия Пятибратова</span>
+                    <span class="privacy"><a href="">Политика конфиденциальности</a></span>
+                </div>
+                <ul>
+                    <li><a href="#">Учебный центр</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Видеокурс детство на 5</a></li>
+                    <li><a href="#">Самый лучший логопед</a></li>
+                    <li><a href="#">Бесплатные пособия</a></li>
+                    <li><a href="#">Статьи о развитии ребенка</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Статьи для логопедов</a></li>
+                    <li><a href="#">Видео с занятий</a></li>
+                    <li><a href="#">Вебинары</a></li>
+                    <li><a href="#">Фотоархив семинаров</a></li>
+                </ul>
+                <div class="right_column">
+                    <span class="footer_phone">+7 916 739 46 47</span>
+                    <span class="footer_email"><a href="">nata_757575@mail.ru</a></span>
+                    <div class="social">
+                        <a class="vk" href="#"></a>
+                        <a class="whatsapp" href="#"></a>
+                        <a class="telegram" href="#"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper tablet">
+
+                <div class="left_column">
+                    <a href="" class="logo"><img src="css/images/logo.svg"/></a>
+                </div>
+
+                <div class="center_column">
+                    <span class="footer_phone">+7 916 739 46 47</span>
+                    <span class="footer_email"><a href="">nata_757575@mail.ru</a></span>
+                    <span class="privacy"><a href="">Политика конфиденциальности</a></span>
+                </div>
+
+                <div class="right_column">
+                    <div class="social">
+                        <a class="vk" href="#"></a>
+                        <a class="whatsapp" href="#"></a>
+                        <a class="telegram" href="#"></a>
+                    </div>
+                    <span class="copy">2022 &copy; Наталия Пятибратова</span>
+                </div>
+
+            </div>
+
+            <div class="wrapper mobile">
+
+                <div class="center_column">
+                    <div class="left_column">
+                        <span class="footer_phone">+7 916 739 46 47</span>
+                        <span class="footer_email"><a href="">nata_757575@mail.ru</a></span>
+                        <div class="social">
+                            <a class="vk" href="#"></a>
+                            <a class="whatsapp" href="#"></a>
+                            <a class="telegram" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="right_column">
+                        <a href="" class="logo"><img src="css/images/logo.svg"/></a>
+                    </div>
+                </div>
+                <span class="copy">2022 &copy; Наталия Пятибратова</span>
+                <span class="privacy"><a href="">Политика конфиденциальности</a></span>
+
+            </div>
+
+        </footer>
+
+        </div>
+
+        <!-- SCRIPS -->
+
+        <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
+
+        <script src="js/swiper/swiper-bundle.min.js"></script>
+
+        <script src="js/scripts.js"></script>
+
+        <!-- Добавился файл: -->
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>
