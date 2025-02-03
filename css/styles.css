@@ -179,6 +179,10 @@
     display: flex;
     margin-left: -15px;
     margin-right: -15px;
+    margin-bottom: 30px;
+}
+.educational_audience_container:last-child {
+    margin-bottom: 0;
 }
 .educational_audience_box {
     display: flex;
@@ -261,12 +265,33 @@
     margin-left: auto;
     margin-right: auto;
 }
+.educational_audience_important_icon_exam {
+    max-width: 131px;
+    max-height: 131px;
+}
+.educational_audience_exam_block {}
+.educational_audience_exam_text {
+    margin-bottom: 45px;
+    text-align: center;
+}
+.educational_audience_exam_info {
+    margin-bottom: 3px;
+    font: 700 32px/44px Nunito_Bold;
+    color: #000000;
+}
+.educational_audience_exam_detail {
+    max-width: 404px;
+    font: 600 18px/22px 'Montserrat_Regular', Arial;
+    color: #000000;
+}
+.educational_audience_exam_button {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
 
 @media screen and (max-device-width: 1320px) and (min-device-width: 719px)
 {
-    .educational_audience .wrapper {
-        width: 660px;
-    }
     .educational_audience_block_important {
         display: block;
     }
@@ -280,10 +305,18 @@
     .educational_audience_important_icon {
         margin-bottom: 0;
         margin-right: 45px;
+        margin-left: 0;
     }
     .educational_audience_important {
         max-width: none;
         text-align: left;
+    }
+    .educational_audience_exam_text {
+        text-align: initial;
+    }
+    .educational_audience_exam_button {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 @media screen and (max-device-width: 1320px)
@@ -327,9 +360,20 @@
         font-size: 14px;
         line-height: 19px;
     }
+    .educational_audience_exam_text {
+        margin-bottom: 40px;
+    }
     .educational_audience_important_icon {
         max-width: 90px;
         max-height: 90px;
+    }
+    .educational_audience_exam_info {
+        font-size: 25px;
+        line-height: 34px;
+    }
+    .educational_audience_exam_detail {
+        font-size: 14px;
+        line-height: 18px;
     }
 }
 
@@ -3157,11 +3201,13 @@
   text-align: center;
   color: #000000;
 }
+.our_priorities_swipper_wrapper {
+    position: relative;
+}
 .our_priorities ._wrapper .our_priorities_swipper_crop {
-  width: 100%;
   overflow: hidden;
   display: block;
-  margin: 0;
+  margin: 0 75px;
 }
 .our_priorities ._wrapper .our_priorities_swipper_crop .our_priorities_slider {
   width: 100%;
@@ -3175,12 +3221,12 @@
   width: 297px;
   display: flex;
   flex-direction: column;
-  padding: 0 15px 0 0;
+  padding: 0;
   box-sizing: border-box;
 }
 .our_priorities ._wrapper .our_priorities_swipper_crop .our_priorities_slider .swiper-wrapper .our_priorities_slide img {
-  width: 297px;
-  height: 335px;
+  width: 260px;
+  height: 290px;
   margin: 0 0 30px 0;
   -o-object-fit: cover;
      object-fit: cover;
@@ -3197,7 +3243,41 @@
   padding: 0;
 }
 
-.famous_people {
+.slider-button-prev { width: 40px; height: 40px; background: url(images/main_slider_left_arrow.svg) 0 0 no-repeat; position: absolute; right: auto; left: 0; cursor: pointer; z-index: 99;}
+.slider-button-next { width: 40px; height: 40px; background: url(images/main_slider_right_arrow.svg) 0 0 no-repeat; position: absolute; right: 0; left: auto; cursor: pointer; z-index: 99;}
+.slider-button-prev:after {
+    content: "";
+}
+.slider-button-next:after {
+    content: "";
+}
+.gallery_slider_pagination {
+    text-align: center;
+}
+.gallery_slider_pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin-left: 7px!important;
+    margin-right: 7px!important;
+    background-color: #8F93A3;
+    opacity: 0.5;
+}
+.gallery_slider_pagination .swiper-pagination-bullet-active {
+    background-color: #FFD990;
+    opacity: 1;
+}
+.our_priorities_pagination {
+    margin-top: 50px;
+    text-align: center;
+}
+.our_priorities_button_prev {
+    top: 147px;
+}
+.our_priorities_button_next {
+    top: 147px;
+}
+
+ .famous_people {
   width: 100%;
   float: left;
   padding: 0 0 120px 0;
@@ -4104,9 +4184,7 @@
     height: 140px;
   }
   .our_priorities {
-    width: 100%;
-    float: left;
-    padding: 0 0 20px 0;
+    padding: 0 0 40px 0;
   }
   .our_priorities ._wrapper {
     width: 660px;
@@ -4126,9 +4204,20 @@
     text-align: center;
     color: #000000;
   }
+  .slider-button-prev {
+      display: none;
+  }
+  .slider-button-next {
+      display: none;
+  }
+  .our_priorities_swiper {
+      overflow: visible;
+  }
   .our_priorities ._wrapper .our_priorities_swipper_crop {
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
+    margin-left: 0;
+    margin-right: 0;
   }
   .our_priorities ._wrapper .our_priorities_swipper_crop .our_priorities_swiper {
     width: 100%;
@@ -4141,10 +4230,10 @@
     justify-content: space-between;
   }
   .our_priorities ._wrapper .our_priorities_swipper_crop .our_priorities_swiper .swiper-wrapper .our_priorities_slide {
-    width: 322px !important;
+    width: 285px !important;
     box-sizing: border-box;
     padding: 0 !important;
-    height: 457px !important;
+    height: 340px !important;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -4153,7 +4242,7 @@
     margin: 0 0 30px 0 !important;
   }
   .our_priorities ._wrapper .our_priorities_swipper_crop .our_priorities_swiper .swiper-wrapper .our_priorities_slide span {
-    width: 282px;
+    width: 240px;
     font-family: Montserrat_SemiBold;
     font-size: 17px;
     font-weight: 600;
@@ -4165,11 +4254,12 @@
     justify-content: flex-start;
   }
   .our_priorities ._wrapper .our_priorities_swipper_crop .our_priorities_swiper .swiper-wrapper .our_priorities_slide img {
-    width: 322px;
-    height: 363px;
     -o-object-fit: cover;
        object-fit: cover;
     margin: 0 0 30px 0;
+  }
+  .our_priorities_pagination {
+      margin-top: 35px;
   }
   .famous_people {
     width: 100%;
@@ -5153,6 +5243,9 @@
     text-align: center;
     padding: 0;
   }
+  .our_priorities_pagination {
+      margin-top: 35px;
+  }
   .famous_people {
     width: 100%;
     float: left;
@@ -5700,6 +5793,12 @@
     height: 80px;
     width: 80px;
     margin: -40px 0 0 -40px;
+  }
+  .slider-button-prev {
+      display: none;
+  }
+  .slider-button-next {
+      display: none;
   }
 }
 @media (hover: hover) {
