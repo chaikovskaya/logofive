@@ -1,5 +1,4 @@
 
-
 html            { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
     height: 100%;
 }
@@ -240,7 +239,7 @@ header                  { width: 100%; min-width: 1320px; background-color: #FDE
 
 header .wrapper              { width: 1280px; height: 130px; position: relative; margin: 0 auto; display: flex; align-items: center; justify-content: flex-start; }
 
-header .wrapper ul                   { margin: 0 16px 0 0; }
+header .wrapper ul                   { margin: 0 10px 0 0; }
 header .wrapper ul li                { float: left; margin: 0 18px 0 0; }
 header .wrapper ul li a              { color: #8F93A3; text-decoration: none; cursor: pointer; -webkit-user-select: none; }
 
@@ -264,7 +263,7 @@ header .wrapper ul li ul li:last-child           { border-bottom-right-radius: 1
 
 .humburger_container            { display: none; }
 
-header .wrapper .logo                   { width: 90px; height: 90px; margin: 0 30px 0 0;  }
+header .wrapper .logo                   { width: 90px; height: 90px; margin: 0 20px 0 0;  }
 
 
 
